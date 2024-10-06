@@ -1,0 +1,62 @@
+{
+    "scene"     : "Bartender Interview",
+    "npc"       : "Bartender",
+    "settings"  : {
+        "font_name"     : "Liberty",
+        "font_size"     : 25,
+        "font_color"    :[24, 51, 90]
+    },
+    "dialogue"  : [
+        {
+            "id"            : 1,
+            "text"          : "I understand you were working the bar the night of the murder. I need to know \neverything you saw.",
+            "npc_response"  : "Yeah... yeah, I was there. It was a busy night. Too many people... but yeah, \nI remember seeing him.",
+            "has_choices"   : true,
+            "choices"       : [
+                {
+                    "text"  : "Push him to talk!!",
+                    "next"  : 2
+                },
+                {
+                    "text"  : "Calmly ask",
+                    "next"  : 3
+                },
+                {
+                    "text"  : "Make him comfortable",
+                    "next"  : 4
+                }
+            ]
+        },
+        {
+            "id"            : 2,
+            "text"          : "I don't have time for vague answers. What did you see?",
+            "npc_response"  : "Alright! Calm down! He was tall, wearing a dark jacket, but... \nI didn't get a good look at his face. He had a hat on, I think...",
+            "has_choices"   : false,
+            "next"          : 5
+        },
+        {
+            "id"            : 3,
+            "text"          : "Take your time. I just need the facts. Start from the beginning.",
+            "npc_response"  : "Okay... I noticed him a little after midnight. He was at the bar, \nnot drinking though. Just... watching people. Gave me the creeps.",
+            "has_choices"   : false,
+            "next"          : 5
+        },
+        {
+            "id"            : 4,
+            "text"          : "I get it, this isn't easy. But you're helping us solve a murder. \nTell me what you know.",
+            "npc_response"  : "Thanks... It's just... I didn't expect this. He seemed out of place, you know? \nLike he didn't belong there.  But I did notice his shoes - \nthey were expensive, polished. Weird for that place.",
+            "has_choices"   : false,
+            "next"          : 5
+        },
+        {
+            "id"            : 5,
+            "text"          : "I appreciate your cooperation, please let me know if this person comes to your bar again.",
+            "npc_response"  : "Yeah, sure...",
+            "has_choices"   : false,
+            "next"          : null
+        }
+
+
+    ]
+
+}

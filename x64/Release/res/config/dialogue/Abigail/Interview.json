@@ -1,0 +1,75 @@
+{
+    "interview": {
+      "scene": "Bartender Interview",
+      "npc": "Bartender",
+      "dialogue": [
+        {
+          "id": 1,
+          "text": "I understand you were working the bar the night of the murder. I need to know everything you saw.",
+          "npc_response": {
+            "text": "Yeah... yeah, I was there. It was a busy night. Too many people... but yeah, I remember seeing him."
+          },
+          "choices": [
+            {
+              "id": 1,
+              "text": "I don’t have time for vague answers. What did you see?",
+              "response": {
+                "npc_text": "Alright! Calm down! He was tall, wearing a dark jacket, but... I didn’t get a good look at his face. He had a hat on, I think...",
+                "next_dialogue": 2
+              }
+            },
+            {
+              "id": 2,
+              "text": "Take your time. I just need the facts. Start from the beginning.",
+              "response": {
+                "npc_text": "Okay... I noticed him a little after midnight. He was at the bar, not drinking though. Just... watching people. Gave me the creeps.",
+                "next_dialogue": 2
+              }
+            },
+            {
+              "id": 3,
+              "text": "I get it, this isn't easy. But you’re helping us solve a murder. Tell me what you know.",
+              "response": {
+                "npc_text": "Thanks... It’s just... I didn’t expect this. He seemed out of place, you know? Like he didn’t belong there. But I did notice his shoes — they were expensive, polished. Weird for that place.",
+                "next_dialogue": 2
+              }
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "You said you didn’t see his face clearly. Can you tell me more about his behavior? Did he speak to anyone?",
+          "npc_response": {
+            "text": "He wasn’t talking to anyone. Just stood there, watching. Creepy."
+          },
+          "choices": [
+            {
+              "id": 1,
+              "text": "Where did he go after you saw him at the bar?",
+              "response": {
+                "npc_text": "I’m not sure... I think he slipped out before anyone else noticed. I was busy at the bar when I looked up, and he was gone.",
+                "next_dialogue": null
+              }
+            },
+            {
+              "id": 2,
+              "text": "How was he acting? Nervous? Confident?",
+              "response": {
+                "npc_text": "Confident, I’d say. He didn’t seem nervous at all. Like he knew what he was doing.",
+                "next_dialogue": null
+              }
+            },
+            {
+              "id": 3,
+              "text": "Did anyone else notice him? Maybe talk to him?",
+              "response": {
+                "npc_text": "No, I don’t think so. He kept to himself the whole time.",
+                "next_dialogue": null
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+  

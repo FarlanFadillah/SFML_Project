@@ -1,0 +1,12 @@
+﻿  A4.cpp
+D:\CPP Project\A4\A4\Components.hpp(204,27): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+  (compiling source file 'A4.cpp')
+  
+  Scene_Interview.cpp
+D:\CPP Project\A4\A4\Components.hpp(204,27): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+  (compiling source file 'Scene_Interview.cpp')
+  
+  Generating Code...
+  A4.vcxproj -> D:\CPP Project\A4\x64\Debug\A4.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.

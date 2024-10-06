@@ -1,0 +1,135 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "Miami_Metro_Office.tmx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "fileStates": {
+        "Miami_Metro_Office.tmx": {
+            "scale": 5.5,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 360.0909090909091,
+                "y": 509.5454545454546
+            }
+        },
+        "book_self_1.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 8
+        },
+        "border_wall.tsx": {
+            "scaleInDock": 2,
+            "scaleInEditor": 8
+        },
+        "computer_1.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "couch_2_Right.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 8
+        },
+        "desk_1.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 8
+        },
+        "desk_2.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 8
+        },
+        "desk_3.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "desk_4.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "desk_5.tsx": {
+            "scaleInDock": 1
+        },
+        "extend_desk_1.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 8
+        },
+        "extend_desk_2.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 8
+        },
+        "extended_desk.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 8
+        },
+        "furniture_office.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 8
+        },
+        "icon.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 8
+        },
+        "office_floor.tsx": {
+            "scaleInDock": 4,
+            "scaleInEditor": 8
+        },
+        "painting_2.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 8
+        },
+        "wall_office.tsx": {
+            "scaleInDock": 3,
+            "scaleInEditor": 8
+        }
+    },
+    "last.externalTilesetPath": "E:/OpenGLProjects/A4/A4/res/images/tile",
+    "last.imagePath": "E:/OpenGLProjects/A4/A4/res/images/wall",
+    "last.objectTemplatePath": "E:/OpenGLProjects/A4/A4/res/images/tile",
+    "map.height": 11,
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 20,
+    "openFiles": [
+        "office_floor.tsx",
+        "Miami_Metro_Office.tmx",
+        "border_wall.tsx",
+        "furniture_office.tsx",
+        "desk_1.tsx",
+        "icon.tsx",
+        "couch_2_Right.tsx",
+        "extended_desk.tsx",
+        "book_self_1.tsx",
+        "painting_2.tsx",
+        "wall_office.tsx",
+        "desk_2.tsx",
+        "extend_desk_2.tsx",
+        "extend_desk_1.tsx",
+        "desk_3.tsx",
+        "desk_4.tsx"
+    ],
+    "project": "Office.tiled-project",
+    "property.type": "int",
+    "recentFiles": [
+        "office_floor.tsx",
+        "desk_4.tsx",
+        "desk_3.tsx",
+        "extend_desk_1.tsx",
+        "extend_desk_2.tsx",
+        "desk_2.tsx",
+        "wall_office.tsx",
+        "painting_2.tsx",
+        "book_self_1.tsx",
+        "extended_desk.tsx",
+        "couch_2_Right.tsx",
+        "icon.tsx"
+    ],
+    "tileset.lastUsedFilter": "Tiled tileset files (*.tsx *.xml)",
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 14,
+        "width": 16
+    }
+}

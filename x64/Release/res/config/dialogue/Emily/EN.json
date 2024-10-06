@@ -1,0 +1,10 @@
+{
+    "header":{
+        "case" : "Ice Truck Killer"
+    },
+    "contents" : {
+        "Introduction" : "Hello there.%nm^",
+        "Monday" : "hello, coffe?%nm^*Okay, see you then..%sm1^",
+        "Tuesday": "are you okay?%nm^*You look.. sick, get any sleep?%nm^*i am worried, you know..%sd^*you can take a day off, you deserve it.%sm1^"
+    }
+}

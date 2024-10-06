@@ -1,0 +1,237 @@
+{
+    "scene"     : "Cafe Conversation",
+    "npc"       : "Haley_Winter",
+    "settings"  : {
+        "font_name"     : "Liberty",
+        "font_size"     : 25,
+        "font_color"    : [150, 75, 0]
+    },
+    "dialogue"  : [
+        {
+            "id"            : 1,
+            "text"          : "I didn't expect to see you here, Haley. What brings you to this side of town?",
+            "npc_response"  : "I could ask you the same thing. But maybe I was hoping to run into you...%sm1^*",
+            "has_choices"   : true,
+            "choices"       : [
+                {
+                    "text"  : "Friendly response",
+                    "next"  : 2
+                },
+                {
+                    "text"  : "Playful response",
+                    "next"  : 3
+                },
+                {
+                    "text"  : "Curious response",
+                    "next"  : 4
+                }
+            ]
+        },
+        {
+            "id"            : 2,
+            "text"          : "It's always nice running into you. Especially in a quiet place like this.",
+            "npc_response"  : "Oh? So you enjoy our little encounters, then? Maybe we should make them more frequent...%sm3^*",
+            "has_choices"   : true,
+            "choices"       : [
+                {
+                    "text"  : "Agree with her",
+                    "next"  : 5
+                },
+                {
+                    "text"  : "Tease her",
+                    "next"  : 6
+                }
+            ]
+        },
+        {
+            "id"            : 3,
+            "text"          : "Hoping, huh? Should I be flattered?",
+            "npc_response"  : "Well, that depends. Would it make you smile if I said yes?%sm2^*",
+            "has_choices"   : true,
+            "choices"       : [
+                {
+                    "text"  : "Intrigued response",
+                    "next"  : 7
+                },
+                {
+                    "text"  : "Play hard to get",
+                    "next"  : 8
+                },
+                {
+                    "text"  : "Challenge her",
+                    "next"  : 9
+                }
+            ]
+        },
+        {
+            "id"            : 4,
+            "text"          : "You've been thinking about me?",
+            "npc_response"  : "Maybe I have. Does that surprise you?%bu^*",
+            "has_choices"   : true,
+            "choices"       : [
+                {
+                    "text"  : "Surprised response",
+                    "next"  : 10
+                },
+                {
+                    "text"  : "Confident response",
+                    "next"  : 11
+                }
+            ]
+        },
+        {
+            "id"            : 5,
+            "text"          : "You know, I wouldn't mind that at all.",
+            "npc_response"  : "Then I guess it's a date. But don't get too used to me, detective. I can still keep you on your toes.%sm2^*",
+            "has_choices"   : true,
+            "choices"       : [
+                {
+                    "text"  : "Agree playfully",
+                    "next"  : 12
+                },
+                {
+                    "text"  : "Play hard to get",
+                    "next"  : 13
+                }
+            ]
+        },
+        {
+            "id"            : 6,
+            "text"          : "I like keeping things... unpredictable.",
+            "npc_response"  : "Unpredictable, huh? Well, I'm not someone who's easily thrown off balance.%sm1^*",
+            "has_choices"   : true,
+            "choices"       : [
+                {
+                    "text"  : "Keep teasing",
+                    "next"  : 12
+                },
+                {
+                    "text"  : "Switch to serious tone",
+                    "next"  : 14
+                }
+            ]
+        },
+        {
+            "id"            : 7,
+            "text"          : "You've got me curious now.",
+            "npc_response"  : "Good. Curiosity suits you. Maybe I'll keep you wondering a bit longer...%la^*",
+            "has_choices"   : true,
+            "choices"       : [
+                {
+                    "text"  : "Challenge her",
+                    "next"  : 13
+                },
+                {
+                    "text"  : "Stay mysterious",
+                    "next"  : 14
+                }
+            ]
+        },
+        {
+            "id"            : 8,
+            "text"          : "I don't smile that easily.",
+            "npc_response"  : "Oh, really? Maybe I'll have to try a little harder.%sm2^*",
+            "has_choices"   : true,
+            "choices"       : [
+                {
+                    "text"  : "Tease her back",
+                    "next"  : 12
+                },
+                {
+                    "text"  : "Compliment her",
+                    "next"  : 14
+                }
+            ]
+        },
+        {
+            "id"            : 9,
+            "text"          : "Let's find out.",
+            "npc_response"  : "Now that sounds like a challenge, detective.%la^*",
+            "has_choices"   : true,
+            "choices"       : [
+                {
+                    "text"  : "Accept her challenge",
+                    "next"  : 13
+                },
+                {
+                    "text"  : "Flirt casually",
+                    "next"  : 14
+                }
+            ]
+        },
+        {
+            "id"            : 10,
+            "text"          : "A little. But I'm not complaining.",
+            "npc_response"  : "Good. I wouldn't want to give you anything to complain about.%sm1^*",
+            "has_choices"   : true,
+            "choices"       : [
+                {
+                    "text"  : "Playfully agree",
+                    "next"  : 12
+                },
+                {
+                    "text"  : "Shift to serious tone",
+                    "next"  : 14
+                }
+            ]
+        },
+        {
+            "id"            : 11,
+            "text"          : "Not really. You're hard to read, but I'm good at this.",
+            "npc_response"  : "Confident, are we? Well, I like a challenge.%sm1^*",
+            "has_choices"   : true,
+            "choices"       : [
+                {
+                    "text"  : "Accept her challenge",
+                    "next"  : 13
+                },
+                {
+                    "text"  : "Shift to serious tone",
+                    "next"  : 14
+                }
+            ]
+        },
+        {
+            "id"            : 12,
+            "text"          : "I look forward to it.",
+            "npc_response"  : "You might be in for more than you expect.%sm1^*",
+            "has_choices"   : false,
+            "next"          : 15
+        },
+        {
+            "id"            : 13,
+            "text"          : "Let's see if you can.",
+            "npc_response"  : "Oh, I can. But I guess you'll just have to wait and see.%sm1^*",
+            "has_choices"   : false,
+            "next"          : 16
+        },
+        {
+            "id"            : 14,
+            "text"          : "You know, Haley, I think there's more to this than just a friendly chat.",
+            "npc_response"  : "You might be right. But I like keeping things interesting.%sm1^*",
+            "has_choices"   : false,
+            "next"          : 17
+        },
+        {
+            "id"            : 15,
+            "text"          : "Maybe we can continue this somewhere else.",
+            "npc_response"  : "Lead the way, detective.%sm1^*",
+            "has_choices"   : false,
+            "next"          : null
+        },
+        {
+            "id"            : 16,
+            "text"          : "You're full of surprises, Haley. I'll be waiting.",
+            "npc_response"  : "Waiting, huh? I'll make sure to keep you on your toes.%sm1^*",
+            "has_choices"   : false,
+            "next"          : null
+        },
+        {
+            "id"            : 17,
+            "text"          : "I like interesting. Maybe we'll see where this goes.",
+            "npc_response"  : "Maybe we will. But only time will tell.%sm1^*",
+            "has_choices"   : false,
+            "next"          : null
+        }
+    ]
+}

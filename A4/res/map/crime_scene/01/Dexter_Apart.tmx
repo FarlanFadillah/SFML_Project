@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="3" nextobjectid="86">
+ <tileset firstgid="1" source="../../../images/tile/office_floor.tsx"/>
+ <tileset firstgid="7" source="../../../images/tile/border_wall.tsx"/>
+ <tileset firstgid="43" source="../../../images/tile/wall_office.tsx"/>
+ <tileset firstgid="53" source="../../../images/tile/extend_desk_2.tsx"/>
+ <tileset firstgid="54" source="../../../images/tile/desk_2.tsx"/>
+ <tileset firstgid="55" source="../../../images/tile/couch_2_Right.tsx"/>
+ <tileset firstgid="56" source="../../../images/tile/furniture_office.tsx"/>
+ <tileset firstgid="88" source="../../../images/tile/icon.tsx"/>
+ <layer id="1" name="Tile_Layer_1" width="30" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,5,5,5,5,5,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,5,5,5,5,5,5,5,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,5,5,5,5,5,5,5,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,5,5,5,5,5,5,5,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,5,5,5,5,5,5,5,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,5,5,5,5,5,5,5,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,5,5,5,5,5,5,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,5,5,5,5,5,5,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,5,5,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="object_layer_1">
+  <object id="2" name="border_wall_10" type="Wall" gid="16" x="256" y="48" width="16" height="16">
+   <properties>
+    <property name="hb" type="int" value="16"/>
+    <property name="offx" type="int" value="9"/>
+    <property name="offy" type="int" value="0"/>
+    <property name="wb" type="int" value="7"/>
+   </properties>
+  </object>
+  <object id="3" name="border_wall_10" type="Wall" gid="16" x="256" y="64" width="16" height="16">
+   <properties>
+    <property name="hb" type="int" value="16"/>
+    <property name="offx" type="int" value="9"/>
+    <property name="offy" type="int" value="0"/>
+    <property name="wb" type="int" value="7"/>
+   </properties>
+  </object>
+  <object id="4" name="border_wall_10" type="Wall" gid="16" x="256" y="80" width="16" height="16">
+   <properties>
+    <property name="hb" type="int" value="16"/>
+    <property name="offx" type="int" value="9"/>
+    <property name="offy" type="int" value="0"/>
+    <property name="wb" type="int" value="7"/>
+   </properties>
+  </object>
+  <object id="9" name="border_wall_10" type="Wall" gid="16" x="256" y="160" width="16" height="16">
+   <properties>
+    <property name="hb" type="int" value="16"/>
+    <property name="offx" type="int" value="9"/>
+    <property name="offy" type="int" value="0"/>
+    <property name="wb" type="int" value="7"/>
+   </properties>
+  </object>
+  <object id="10" name="border_wall_10" type="Wall" gid="16" x="256" y="176" width="16" height="16">
+   <properties>
+    <property name="hb" type="int" value="16"/>
+    <property name="offx" type="int" value="9"/>
+    <property name="offy" type="int" value="0"/>
+    <property name="wb" type="int" value="7"/>
+   </properties>
+  </object>
+  <object id="11" name="border_wall_10" type="Wall" gid="16" x="256" y="192" width="16" height="16">
+   <properties>
+    <property name="hb" type="int" value="16"/>
+    <property name="offx" type="int" value="9"/>
+    <property name="offy" type="int" value="0"/>
+    <property name="wb" type="int" value="7"/>
+   </properties>
+  </object>
+  <object id="12" name="border_wall_10" type="Wall" gid="16" x="256" y="208" width="16" height="16">
+   <properties>
+    <property name="hb" type="int" value="16"/>
+    <property name="offx" type="int" value="9"/>
+    <property name="offy" type="int" value="0"/>
+    <property name="wb" type="int" value="7"/>
+   </properties>
+  </object>
+  <object id="13" name="border_wall_10" type="Wall" gid="16" x="256" y="224" width="16" height="16">
+   <properties>
+    <property name="hb" type="int" value="16"/>
+    <property name="offx" type="int" value="9"/>
+    <property name="offy" type="int" value="0"/>
+    <property name="wb" type="int" value="7"/>
+   </properties>
+  </object>
+  <object id="14" name="border_wall_10" type="Wall" gid="16" x="256" y="240" width="16" height="16">
+   <properties>
+    <property name="hb" type="int" value="16"/>
+    <property name="offx" type="int" value="9"/>
+    <property name="offy" type="int" value="0"/>
+    <property name="wb" type="int" value="7"/>
+   </properties>
+  </object>
+  <object id="15" name="border_wall_10" type="Wall" gid="16" x="256" y="256" width="16" height="16">
+   <properties>
+    <property name="hb" type="int" value="16"/>
+    <property name="offx" type="int" value="9"/>
+    <property name="offy" type="int" value="0"/>
+    <property name="wb" type="int" value="7"/>
+   </properties>
+  </object>
+  <object id="21" name="border_wall_10" type="Wall" gid="16" x="256" y="272" width="16" height="16">
+   <properties>
+    <property name="hb" type="int" value="16"/>
+    <property name="offx" type="int" value="9"/>
+    <property name="offy" type="int" value="0"/>
+    <property name="wb" type="int" value="7"/>
+   </properties>
+  </object>
+  <object id="24" name="border_wall_1" type="Wall" gid="7" x="256" y="32" width="16" height="16">
+   <properties>
+    <property name="hb" type="int" value="16"/>
+    <property name="offx" type="int" value="9"/>
+    <property name="offy" type="int" value="0"/>
+    <property name="wb" type="int" value="7"/>
+   </properties>
+  </object>
+  <object id="25" name="wall_2" type="Furniture" gid="44" x="249" y="48" width="16" height="32">
+   <properties>
+    <property name="hb" type="int" value="12"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="20"/>
+    <property name="wb" type="int" value="16"/>
+   </properties>
+  </object>
+  <object id="26" name="wall_2" type="Furniture" gid="44" x="240" y="48" width="16" height="32">
+   <properties>
+    <property name="hb" type="int" value="12"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="20"/>
+    <property name="wb" type="int" value="16"/>
+   </properties>
+  </object>
+  <object id="27" name="wall_2" type="Furniture" gid="44" x="224" y="48" width="16" height="32">
+   <properties>
+    <property name="hb" type="int" value="12"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="20"/>
+    <property name="wb" type="int" value="16"/>
+   </properties>
+  </object>
+  <object id="28" name="wall_2" type="Furniture" gid="44" x="208" y="48" width="16" height="32">
+   <properties>
+    <property name="hb" type="int" value="12"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="20"/>
+    <property name="wb" type="int" value="16"/>
+   </properties>
+  </object>
+  <object id="29" name="wall_2" type="Furniture" gid="44" x="192" y="48" width="16" height="32">
+   <properties>
+    <property name="hb" type="int" value="12"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="20"/>
+    <property name="wb" type="int" value="16"/>
+   </properties>
+  </object>
+  <object id="30" name="wall_2" type="Furniture" gid="44" x="176" y="48" width="16" height="32">
+   <properties>
+    <property name="hb" type="int" value="12"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="20"/>
+    <property name="wb" type="int" value="16"/>
+   </properties>
+  </object>
+  <object id="31" name="wall_2" type="Furniture" gid="44" x="160" y="48" width="16" height="32">
+   <properties>
+    <property name="hb" type="int" value="12"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="20"/>
+    <property name="wb" type="int" value="16"/>
+   </properties>
+  </object>
+  <object id="32" name="wall_2" type="Furniture" gid="44" x="144" y="48" width="16" height="32">
+   <properties>
+    <property name="hb" type="int" value="12"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="20"/>
+    <property name="wb" type="int" value="16"/>
+   </properties>
+  </object>
+  <object id="33" name="wall_2" type="Furniture" gid="44" x="128" y="48" width="16" height="32">
+   <properties>
+    <property name="hb" type="int" value="12"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="20"/>
+    <property name="wb" type="int" value="16"/>
+   </properties>
+  </object>
+  <object id="34" name="wall_2" type="Furniture" gid="44" x="112" y="48" width="16" height="32">
+   <properties>
+    <property name="hb" type="int" value="12"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="20"/>
+    <property name="wb" type="int" value="16"/>
+   </properties>
+  </object>
+  <object id="35" name="wall_2" type="Furniture" gid="44" x="96" y="48" width="16" height="32">
+   <properties>
+    <property name="hb" type="int" value="12"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="20"/>
+    <property name="wb" type="int" value="16"/>
+   </properties>
+  </object>
+  <object id="36" name="wall_2" type="Furniture" gid="44" x="80" y="48" width="16" height="32">
+   <properties>
+    <property name="hb" type="int" value="12"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="20"/>
+    <property name="wb" type="int" value="16"/>
+   </properties>
+  </object>
+  <object id="39" name="wall_3" type="Furniture" gid="45" x="256" y="304" width="16" height="32">
+   <properties>
+    <property name="hb" type="int" value="12"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="20"/>
+    <property name="wb" type="int" value="16"/>
+   </properties>
+  </object>
+  <object id="40" name="wall_2" type="Furniture" gid="44" x="240" y="304" width="16" height="32">
+   <properties>
+    <property name="hb" type="int" value="12"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="20"/>
+    <property name="wb" type="int" value="16"/>
+   </properties>
+  </object>
+  <object id="41" name="wall_2" type="Furniture" gid="44" x="224" y="304" width="16" height="32">
+   <properties>
+    <property name="hb" type="int" value="12"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="20"/>
+    <property name="wb" type="int" value="16"/>
+   </properties>
+  </object>
+  <object id="42" name="wall_2" type="Furniture" gid="44" x="208" y="304" width="16" height="32">
+   <properties>
+    <property name="hb" type="int" value="12"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="20"/>
+    <property name="wb" type="int" value="16"/>
+   </properties>
+  </object>
+  <object id="43" name="wall_2" type="Furniture" gid="44" x="192" y="304" width="16" height="32">
+   <properties>
+    <property name="hb" type="int" value="12"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="20"/>
+    <property name="wb" type="int" value="16"/>
+   </properties>
+  </object>
+  <object id="44" name="wall_2" type="Furniture" gid="44" x="176" y="304" width="16" height="32">
+   <properties>
+    <property name="hb" type="int" value="12"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="20"/>
+    <property name="wb" type="int" value="16"/>
+   </properties>
+  </object>
+  <object id="45" name="wall_2" type="Furniture" gid="44" x="160" y="304" width="16" height="32">
+   <properties>
+    <property name="hb" type="int" value="12"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="20"/>
+    <property name="wb" type="int" value="16"/>
+   </properties>
+  </object>
+  <object id="50" name="wall_1" type="Furniture" gid="43" x="128" y="272" width="16" height="32">
+   <properties>
+    <property name="hb" type="int" value="12"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="20"/>
+    <property name="wb" type="int" value="16"/>
+   </properties>
+  </object>
+  <object id="51" name="wall_1" type="Furniture" gid="43" x="144" y="304" width="16" height="32">
+   <properties>
+    <property name="hb" type="int" value="12"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="20"/>
+    <property name="wb" type="int" value="16"/>
+   </properties>
+  </object>
+  <object id="52" name="border_wall_2" type="Wall" gid="8" x="144" y="256" width="16" height="16">
+   <properties>
+    <property name="hb" type="int" value="16"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="0"/>
+    <property name="wb" type="int" value="7"/>
+   </properties>
+  </object>
+  <object id="53" name="border_wall_11" type="Wall" gid="17" x="144" y="272" width="16" height="16">
+   <properties>
+    <property name="hb" type="int" value="16"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="0"/>
+    <property name="wb" type="int" value="7"/>
+   </properties>
+  </object>
+  <object id="54" name="border_wall_11" type="Wall" gid="17" x="144" y="288" width="16" height="16">
+   <properties>
+    <property name="hb" type="int" value="16"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="0"/>
+    <property name="wb" type="int" value="7"/>
+   </properties>
+  </object>
+  <object id="55" name="border_wall_11" type="Wall" gid="17" x="128" y="240" width="16" height="16">
+   <properties>
+    <property name="hb" type="int" value="16"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="0"/>
+    <property name="wb" type="int" value="7"/>
+   </properties>
+  </object>
+  <object id="56" name="border_wall_11" type="Wall" gid="17" x="128" y="224" width="16" height="16">
+   <properties>
+    <property name="hb" type="int" value="16"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="0"/>
+    <property name="wb" type="int" value="7"/>
+   </properties>
+  </object>
+  <object id="57" name="border_wall_11" type="Wall" gid="17" x="128" y="208" width="16" height="16">
+   <properties>
+    <property name="hb" type="int" value="16"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="0"/>
+    <property name="wb" type="int" value="7"/>
+   </properties>
+  </object>
+  <object id="58" name="wall_2" type="Furniture" gid="44" x="112" y="192" width="16" height="32">
+   <properties>
+    <property name="hb" type="int" value="12"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="20"/>
+    <property name="wb" type="int" value="16"/>
+   </properties>
+  </object>
+  <object id="59" name="wall_2" type="Furniture" gid="44" x="96" y="192" width="16" height="32">
+   <properties>
+    <property name="hb" type="int" value="12"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="20"/>
+    <property name="wb" type="int" value="16"/>
+   </properties>
+  </object>
+  <object id="60" name="wall_2" type="Furniture" gid="44" x="80" y="192" width="16" height="32">
+   <properties>
+    <property name="hb" type="int" value="12"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="20"/>
+    <property name="wb" type="int" value="16"/>
+   </properties>
+  </object>
+  <object id="61" name="border_wall_11" type="Wall" gid="17" x="128" y="192" width="16" height="16">
+   <properties>
+    <property name="hb" type="int" value="16"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="0"/>
+    <property name="wb" type="int" value="7"/>
+   </properties>
+  </object>
+  <object id="62" name="border_wall_2" type="Wall" gid="8" x="128" y="176" width="16" height="16">
+   <properties>
+    <property name="hb" type="int" value="16"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="0"/>
+    <property name="wb" type="int" value="7"/>
+   </properties>
+  </object>
+  <object id="64" name="wall_1" type="Furniture" gid="43" x="64" y="192" width="16" height="32">
+   <properties>
+    <property name="hb" type="int" value="12"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="20"/>
+    <property name="wb" type="int" value="16"/>
+   </properties>
+  </object>
+  <object id="65" name="wall_1" type="Furniture" gid="43" x="71" y="48" width="16" height="32">
+   <properties>
+    <property name="hb" type="int" value="12"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="20"/>
+    <property name="wb" type="int" value="16"/>
+   </properties>
+  </object>
+  <object id="66" name="border_wall_11" type="Wall" gid="17" x="64" y="64" width="16" height="16">
+   <properties>
+    <property name="hb" type="int" value="16"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="0"/>
+    <property name="wb" type="int" value="7"/>
+   </properties>
+  </object>
+  <object id="67" name="border_wall_2" type="Wall" gid="8" x="64" y="32" width="16" height="16">
+   <properties>
+    <property name="hb" type="int" value="16"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="0"/>
+    <property name="wb" type="int" value="7"/>
+   </properties>
+  </object>
+  <object id="68" name="border_wall_11" type="Wall" gid="17" x="64" y="48" width="16" height="16">
+   <properties>
+    <property name="hb" type="int" value="16"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="0"/>
+    <property name="wb" type="int" value="7"/>
+   </properties>
+  </object>
+  <object id="69" name="border_wall_11" type="Wall" gid="17" x="64" y="80" width="16" height="16">
+   <properties>
+    <property name="hb" type="int" value="16"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="0"/>
+    <property name="wb" type="int" value="7"/>
+   </properties>
+  </object>
+  <object id="70" name="border_wall_11" type="Wall" gid="17" x="64" y="96" width="16" height="16">
+   <properties>
+    <property name="hb" type="int" value="16"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="0"/>
+    <property name="wb" type="int" value="7"/>
+   </properties>
+  </object>
+  <object id="71" name="border_wall_11" type="Wall" gid="17" x="64" y="112" width="16" height="16">
+   <properties>
+    <property name="hb" type="int" value="16"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="0"/>
+    <property name="wb" type="int" value="7"/>
+   </properties>
+  </object>
+  <object id="72" name="border_wall_11" type="Wall" gid="17" x="64" y="128" width="16" height="16">
+   <properties>
+    <property name="hb" type="int" value="16"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="0"/>
+    <property name="wb" type="int" value="7"/>
+   </properties>
+  </object>
+  <object id="73" name="border_wall_11" type="Wall" gid="17" x="64" y="144" width="16" height="16">
+   <properties>
+    <property name="hb" type="int" value="16"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="0"/>
+    <property name="wb" type="int" value="7"/>
+   </properties>
+  </object>
+  <object id="74" name="border_wall_11" type="Wall" gid="17" x="64" y="160" width="16" height="16">
+   <properties>
+    <property name="hb" type="int" value="16"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="0"/>
+    <property name="wb" type="int" value="7"/>
+   </properties>
+  </object>
+  <object id="75" name="border_wall_11" type="Wall" gid="17" x="64" y="176" width="16" height="16">
+   <properties>
+    <property name="hb" type="int" value="16"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="0"/>
+    <property name="wb" type="int" value="7"/>
+   </properties>
+  </object>
+  <object id="76" name="border_wall_35" type="Wall" gid="41" x="256" y="112" width="16" height="16">
+   <properties>
+    <property name="hb" type="int" value="16"/>
+    <property name="offx" type="int" value="9"/>
+    <property name="offy" type="int" value="0"/>
+    <property name="wb" type="int" value="7"/>
+   </properties>
+  </object>
+  <object id="77" name="border_wall_34" type="Wall" gid="40" x="256" y="96" width="16" height="16">
+   <properties>
+    <property name="hb" type="int" value="16"/>
+    <property name="offx" type="int" value="9"/>
+    <property name="offy" type="int" value="0"/>
+    <property name="wb" type="int" value="7"/>
+   </properties>
+  </object>
+  <object id="79" name="border_wall_1" type="Furniture" gid="7" x="256" y="144" width="16" height="16">
+   <properties>
+    <property name="hb" type="int" value="4"/>
+    <property name="offx" type="int" value="9"/>
+    <property name="offy" type="int" value="12"/>
+    <property name="wb" type="int" value="7"/>
+   </properties>
+  </object>
+  <object id="80" name="desk_2" type="Furniture" gid="54" x="160" y="78" width="13" height="36">
+   <properties>
+    <property name="hb" type="int" value="25"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="5"/>
+    <property name="wb" type="int" value="13"/>
+   </properties>
+  </object>
+  <object id="81" name="extend_desk_3" type="Furniture" gid="53" x="174" y="64" width="29" height="22">
+   <properties>
+    <property name="hb" type="int" value="8"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="5"/>
+    <property name="wb" type="int" value="29"/>
+   </properties>
+  </object>
+  <object id="82" name="couch_2_right" type="Furniture" gid="55" x="72" y="124" width="32" height="64">
+   <properties>
+    <property name="hb" type="int" value="50"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="14"/>
+    <property name="wb" type="int" value="23"/>
+   </properties>
+  </object>
+  <object id="83" name="storage_3" type="Furniture" gid="58" x="72" y="60" width="32" height="32">
+   <properties>
+    <property name="hb" type="int" value="16"/>
+    <property name="offx" type="int" value="0"/>
+    <property name="offy" type="int" value="16"/>
+    <property name="wb" type="int" value="32"/>
+   </properties>
+  </object>
+  <object id="84" name="IdleD" type="Player" gid="88" x="186.667" y="128" width="16" height="16">
+   <properties>
+    <property name="hb" type="int" value="5"/>
+    <property name="offx" type="int" value="2"/>
+    <property name="offy" type="int" value="10"/>
+    <property name="wb" type="int" value="13"/>
+   </properties>
+  </object>
+  <object id="85" name="Emily_idleD" type="NPC Emily" gid="88" x="176" y="80" width="16" height="16">
+   <properties>
+    <property name="hb" type="int" value="5"/>
+    <property name="offx" type="int" value="2"/>
+    <property name="offy" type="int" value="10"/>
+    <property name="wb" type="int" value="13"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,63 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "Map2.tmx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "fileStates": {
+        "Base.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Map1.tmx": {
+            "expandedObjectLayers": [
+                2
+            ],
+            "scale": 2.5590625,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 291.70838930272316,
+                "y": 176.04103065087313
+            }
+        },
+        "Map2.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 1008.6666666666667,
+                "y": 458
+            }
+        },
+        "Tree_anim.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "last.imagePath": "E:/OpenGLProjects/A4/A4/res/images/tree",
+    "map.height": 100,
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 100,
+    "openFiles": [
+        "Base.tsx",
+        "Map1.tmx",
+        "Tree_anim.tsx",
+        "Map2.tmx"
+    ],
+    "project": "A4.tiled-project",
+    "recentFiles": [
+        "Base.tsx",
+        "Map1.tmx",
+        "Tree_anim.tsx",
+        "Map2.tmx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 160,
+        "width": 128
+    }
+}
