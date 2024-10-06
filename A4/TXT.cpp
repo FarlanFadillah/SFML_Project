@@ -49,7 +49,6 @@ namespace dl
         }
         return seglist;
     }
-
     std::map<std::string, std::vector<std::string>> setupdialogue(std::string path)
     {
         std::map<std::string, std::vector<std::string>> result;
@@ -118,20 +117,14 @@ namespace dl
     }
     std::string getDialogueText(std::string line)
     {
-        if(line.find('%') != std::string::npos)
-            return line.substr(0, line.find('%'));
-        return line;
+        return line.substr(0, line.find('%'));
     }
-
     std::string getExpression(std::string line)
     {
         int expIndex = line.find('%');
         int el = line.find('^');
         return line.substr(expIndex, el - expIndex);
     }
-
-
-
 }
 
 namespace emt
