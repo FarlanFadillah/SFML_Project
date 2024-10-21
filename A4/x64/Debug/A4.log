@@ -1,12 +1,919 @@
 ﻿  A4.cpp
-D:\CPP Project\A4\A4\Components.hpp(204,27): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+E:\Game Project\SFML_Project\A4\Components.hpp(204,27): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
   (compiling source file 'A4.cpp')
   
-  Scene_Interview.cpp
-D:\CPP Project\A4\A4\Components.hpp(204,27): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
-  (compiling source file 'Scene_Interview.cpp')
+  Action.cpp
+  Animation.cpp
+E:\Game Project\SFML_Project\A4\Animation.cpp(27,64): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Animation.cpp(27,64): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Animation.cpp(27,64): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Animation.cpp(27,64): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Animation.cpp(27,64): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Animation.cpp(27,54): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Animation.cpp(27,54): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Animation.cpp(27,54): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Animation.cpp(27,54): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Animation.cpp(27,54): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Animation.cpp(27,33): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Animation.cpp(27,33): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Animation.cpp(27,33): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Animation.cpp(27,33): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Animation.cpp(27,33): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Animation.cpp(39,52): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Animation.cpp(39,52): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Animation.cpp(39,52): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Animation.cpp(39,52): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Animation.cpp(39,52): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Animation.cpp(39,42): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Animation.cpp(39,42): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Animation.cpp(39,42): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Animation.cpp(39,42): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Animation.cpp(39,42): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Animation.cpp(39,21): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Animation.cpp(39,21): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Animation.cpp(39,21): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Animation.cpp(39,21): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Animation.cpp(39,21): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Animation.cpp(50,59): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Animation.cpp(50,59): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Animation.cpp(50,59): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Animation.cpp(50,59): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Animation.cpp(50,59): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Animation.cpp(50,49): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Animation.cpp(50,49): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Animation.cpp(50,49): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Animation.cpp(50,49): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Animation.cpp(50,49): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Animation.cpp(50,28): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Animation.cpp(50,28): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Animation.cpp(50,28): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Animation.cpp(50,28): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Animation.cpp(50,28): warning C4244:         ]
+  App.cpp
+E:\Game Project\SFML_Project\A4\Components.hpp(204,27): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+  (compiling source file 'App.cpp')
+  
+  Assets.cpp
+  Date.cpp
+  DateSystem.cpp
+  Entity.cpp
+E:\Game Project\SFML_Project\A4\Components.hpp(204,27): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+  (compiling source file 'Entity.cpp')
+  
+  EntityManager.cpp
+E:\Game Project\SFML_Project\A4\Components.hpp(204,27): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+  (compiling source file 'EntityManager.cpp')
+  
+  FingerPrintDBS_APP.cpp
+E:\Game Project\SFML_Project\A4\Components.hpp(204,27): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+  (compiling source file 'FingerPrintDBS_APP.cpp')
+  
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(105,59): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(105,59): warning C4244:         with
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(105,59): warning C4244:         [
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(105,59): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(105,59): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(105,38): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(105,38): warning C4244:         with
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(105,38): warning C4244:         [
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(105,38): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(105,38): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(117,59): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(117,59): warning C4244:         with
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(117,59): warning C4244:         [
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(117,59): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(117,59): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(117,38): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(117,38): warning C4244:         with
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(117,38): warning C4244:         [
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(117,38): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(117,38): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(180,87): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(180,87): warning C4244:         with
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(180,87): warning C4244:         [
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(180,87): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(180,87): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(180,52): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(180,52): warning C4244:         with
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(180,52): warning C4244:         [
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(180,52): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(180,52): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(227,39): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(227,39): warning C4244:         with
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(227,39): warning C4244:         [
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(227,39): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(227,39): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(278,36): warning C4244: '=': conversion from 'uint64_t' to 'int', possible loss of data
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(318,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(318,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(320,17): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(320,10): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(343,44): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(343,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(385,65): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(385,65): warning C4244:         with
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(385,65): warning C4244:         [
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(385,65): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(385,65): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(385,38): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(385,38): warning C4244:         with
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(385,38): warning C4244:         [
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(385,38): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(385,38): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(386,61): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(386,61): warning C4244:         with
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(386,61): warning C4244:         [
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(386,61): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(386,61): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(386,37): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(386,37): warning C4244:         with
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(386,37): warning C4244:         [
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(386,37): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(386,37): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(390,71): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(390,71): warning C4244:         with
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(390,71): warning C4244:         [
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(390,71): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(390,71): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(390,43): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(390,43): warning C4244:         with
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(390,43): warning C4244:         [
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(390,43): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(390,43): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(391,125): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(391,125): warning C4244:         with
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(391,125): warning C4244:         [
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(391,125): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(391,125): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(396,72): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(396,72): warning C4244:         with
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(396,72): warning C4244:         [
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(396,72): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(396,72): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(396,44): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(396,44): warning C4244:         with
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(396,44): warning C4244:         [
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(396,44): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(396,44): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(397,126): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(397,126): warning C4244:         with
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(397,126): warning C4244:         [
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(397,126): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(397,126): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(403,73): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(403,73): warning C4244:         with
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(403,73): warning C4244:         [
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(403,73): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(403,73): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(403,44): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(403,44): warning C4244:         with
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(403,44): warning C4244:         [
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(403,44): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(403,44): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Entity.hpp(67,36): warning C4244: 'argument': conversion from '_Ty' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Entity.hpp(67,36): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Entity.hpp(67,36): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Entity.hpp(67,36): warning C4244:             _Ty=int
+E:\Game Project\SFML_Project\A4\Entity.hpp(67,36): warning C4244:         ]
+  (compiling source file 'FingerPrintDBS_APP.cpp')
+  E:\Game Project\SFML_Project\A4\Entity.hpp(67,36):
+  the template instantiation context (the oldest one first) is
+  	E:\Game Project\SFML_Project\A4\FingerPrintDBS_APP.cpp(318,10):
+  	see reference to function template instantiation 'T &Entity::addComponent<CTransform,Vec2,Vec2,Vec2,int>(Vec2 &&,Vec2 &&,Vec2 &&,int &&)' being compiled
+          with
+          [
+              T=CTransform
+          ]
+  
+  GameEngine.cpp
+E:\Game Project\SFML_Project\A4\Components.hpp(204,27): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+  (compiling source file 'GameEngine.cpp')
+  
+E:\Game Project\SFML_Project\A4\GameEngine.cpp(126,33): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\GameEngine.cpp(126,33): warning C4244:         with
+E:\Game Project\SFML_Project\A4\GameEngine.cpp(126,33): warning C4244:         [
+E:\Game Project\SFML_Project\A4\GameEngine.cpp(126,33): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\GameEngine.cpp(126,33): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\GameEngine.cpp(126,21): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\GameEngine.cpp(126,21): warning C4244:         with
+E:\Game Project\SFML_Project\A4\GameEngine.cpp(126,21): warning C4244:         [
+E:\Game Project\SFML_Project\A4\GameEngine.cpp(126,21): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\GameEngine.cpp(126,21): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\GameEngine.cpp(155,99): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\GameEngine.cpp(155,80): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  imgui-SFML.cpp
+  imgui.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+  imgui_tables.cpp
+  imgui_widgets.cpp
+  Note_APP.cpp
+E:\Game Project\SFML_Project\A4\Components.hpp(204,27): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+  (compiling source file 'Note_APP.cpp')
+  
+E:\Game Project\SFML_Project\A4\Note_APP.cpp(159,65): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Note_APP.cpp(159,65): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Note_APP.cpp(159,65): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Note_APP.cpp(159,65): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\Note_APP.cpp(159,65): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Note_APP.cpp(159,42): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Note_APP.cpp(159,42): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Note_APP.cpp(159,42): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Note_APP.cpp(159,42): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\Note_APP.cpp(159,42): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Note_APP.cpp(185,17): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Note_APP.cpp(185,10): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Note_APP.cpp(209,17): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Note_APP.cpp(209,10): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Entity.hpp(67,36): warning C4244: 'argument': conversion from '_Ty' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Entity.hpp(67,36): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Entity.hpp(67,36): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Entity.hpp(67,36): warning C4244:             _Ty=int
+E:\Game Project\SFML_Project\A4\Entity.hpp(67,36): warning C4244:         ]
+  (compiling source file 'Note_APP.cpp')
+  E:\Game Project\SFML_Project\A4\Entity.hpp(67,36):
+  the template instantiation context (the oldest one first) is
+  	E:\Game Project\SFML_Project\A4\Note_APP.cpp(183,10):
+  	see reference to function template instantiation 'T &Entity::addComponent<CTransform,Vec2,Vec2,Vec2,int>(Vec2 &&,Vec2 &&,Vec2 &&,int &&)' being compiled
+          with
+          [
+              T=CTransform
+          ]
+  
+  Physics.cpp
+E:\Game Project\SFML_Project\A4\Components.hpp(204,27): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+  (compiling source file 'Physics.cpp')
+  
+E:\Game Project\SFML_Project\A4\Physics.cpp(67,146): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Physics.cpp(67,146): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Physics.cpp(67,146): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Physics.cpp(67,146): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Physics.cpp(67,146): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Physics.cpp(67,131): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Physics.cpp(67,131): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Physics.cpp(67,131): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Physics.cpp(67,131): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Physics.cpp(67,131): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Physics.cpp(67,100): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Physics.cpp(67,100): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Physics.cpp(67,100): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Physics.cpp(67,100): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Physics.cpp(67,100): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Physics.cpp(67,53): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Physics.cpp(67,53): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Physics.cpp(67,53): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Physics.cpp(67,53): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Physics.cpp(67,53): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Physics.cpp(68,146): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Physics.cpp(68,146): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Physics.cpp(68,146): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Physics.cpp(68,146): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Physics.cpp(68,146): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Physics.cpp(68,131): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Physics.cpp(68,131): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Physics.cpp(68,131): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Physics.cpp(68,131): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Physics.cpp(68,131): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Physics.cpp(68,100): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Physics.cpp(68,100): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Physics.cpp(68,100): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Physics.cpp(68,100): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Physics.cpp(68,100): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Physics.cpp(68,53): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Physics.cpp(68,53): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Physics.cpp(68,53): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Physics.cpp(68,53): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Physics.cpp(68,53): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Physics.cpp(90,148): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Physics.cpp(90,148): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Physics.cpp(90,148): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Physics.cpp(90,148): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Physics.cpp(90,148): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Physics.cpp(90,133): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Physics.cpp(90,133): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Physics.cpp(90,133): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Physics.cpp(90,133): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Physics.cpp(90,133): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Physics.cpp(90,102): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Physics.cpp(90,102): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Physics.cpp(90,102): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Physics.cpp(90,102): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Physics.cpp(90,102): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Physics.cpp(90,55): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Physics.cpp(90,55): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Physics.cpp(90,55): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Physics.cpp(90,55): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Physics.cpp(90,55): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Physics.cpp(91,148): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Physics.cpp(91,148): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Physics.cpp(91,148): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Physics.cpp(91,148): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Physics.cpp(91,148): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Physics.cpp(91,133): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Physics.cpp(91,133): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Physics.cpp(91,133): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Physics.cpp(91,133): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Physics.cpp(91,133): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Physics.cpp(91,102): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Physics.cpp(91,102): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Physics.cpp(91,102): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Physics.cpp(91,102): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Physics.cpp(91,102): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Physics.cpp(91,55): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Physics.cpp(91,55): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Physics.cpp(91,55): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Physics.cpp(91,55): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Physics.cpp(91,55): warning C4244:         ]
+  Scene.cpp
+E:\Game Project\SFML_Project\A4\Components.hpp(204,27): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+  (compiling source file 'Scene.cpp')
+  
+E:\Game Project\SFML_Project\A4\Scene.cpp(303,13): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene.cpp(303,10): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene.cpp(305,17): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene.cpp(305,10): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene.cpp(324,13): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene.cpp(324,10): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene.cpp(326,17): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene.cpp(326,10): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Entity.hpp(67,36): warning C4244: 'argument': conversion from '_Ty' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Entity.hpp(67,36): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Entity.hpp(67,36): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Entity.hpp(67,36): warning C4244:             _Ty=int
+E:\Game Project\SFML_Project\A4\Entity.hpp(67,36): warning C4244:         ]
+  (compiling source file 'Scene.cpp')
+  E:\Game Project\SFML_Project\A4\Entity.hpp(67,36):
+  the template instantiation context (the oldest one first) is
+  	E:\Game Project\SFML_Project\A4\Scene.cpp(302,5):
+  	see reference to function template instantiation 'T &Entity::addComponent<CTransform,Vec2,Vec2,Vec2,int>(Vec2 &&,Vec2 &&,Vec2 &&,int &&)' being compiled
+          with
+          [
+              T=CTransform
+          ]
   
   Generating Code...
-  A4.vcxproj -> D:\CPP Project\A4\x64\Debug\A4.exe
+  Compiling...
+  Scene_Computer.cpp
+E:\Game Project\SFML_Project\A4\Components.hpp(204,27): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+  (compiling source file 'Scene_Computer.cpp')
+  
+E:\Game Project\SFML_Project\A4\Entity.hpp(67,36): warning C4244: 'argument': conversion from '_Ty' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Entity.hpp(67,36): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Entity.hpp(67,36): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Entity.hpp(67,36): warning C4244:             _Ty=int
+E:\Game Project\SFML_Project\A4\Entity.hpp(67,36): warning C4244:         ]
+  (compiling source file 'Scene_Computer.cpp')
+  E:\Game Project\SFML_Project\A4\Entity.hpp(67,36):
+  the template instantiation context (the oldest one first) is
+  	E:\Game Project\SFML_Project\A4\Scene_Computer.cpp(362,7):
+  	see reference to function template instantiation 'T &Entity::addComponent<CTransform,Vec2,Vec2,Vec2,int>(Vec2 &&,Vec2 &&,Vec2 &&,int &&)' being compiled
+          with
+          [
+              T=CTransform
+          ]
+  
+  Scene_Interview.cpp
+E:\Game Project\SFML_Project\A4\Components.hpp(204,27): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+  (compiling source file 'Scene_Interview.cpp')
+  
+  Scene_Loading.cpp
+E:\Game Project\SFML_Project\A4\Components.hpp(204,27): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+  (compiling source file 'Scene_Loading.cpp')
+  
+  Scene_MapEditor.cpp
+E:\Game Project\SFML_Project\A4\Components.hpp(204,27): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+  (compiling source file 'Scene_MapEditor.cpp')
+  
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(31,60): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(31,60): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(31,60): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(31,60): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(31,60): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(31,40): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(31,40): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(31,40): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(31,40): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(31,40): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(32,69): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(32,69): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(32,69): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(32,69): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(32,69): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(32,45): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(32,45): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(32,45): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(32,45): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(32,45): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(35,65): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(35,65): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(35,65): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(35,65): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(35,65): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(35,41): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(35,41): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(35,41): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(35,41): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(35,41): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(42,34): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(42,34): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(42,34): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(42,34): warning C4244:             T=float
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(42,34): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(42,34): warning C4244:         and
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(42,34): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(42,34): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(42,34): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(41,34): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(41,34): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(41,34): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(41,34): warning C4244:             T=float
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(41,34): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(41,34): warning C4244:         and
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(41,34): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(41,34): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(41,34): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(40,69): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(40,69): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(40,69): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(40,69): warning C4244:             T=float
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(40,69): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(40,69): warning C4244:         and
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(40,69): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(40,69): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(40,69): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(39,86): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(39,86): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(39,86): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(39,86): warning C4244:             T=float
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(39,86): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(39,86): warning C4244:         and
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(39,86): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(39,86): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(39,86): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(92,52): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(92,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(156,44): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(156,44): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(156,44): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(156,44): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(156,44): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(156,37): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(156,37): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(156,37): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(156,37): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(156,37): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(177,48): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(177,48): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(177,48): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(177,48): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(177,48): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(177,41): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(177,41): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(177,41): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(177,41): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(177,41): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(189,38): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(189,38): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(189,38): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(189,38): warning C4244:             T=float
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(189,38): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(189,38): warning C4244:         and
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(189,38): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(189,38): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(189,38): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(188,51): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(188,51): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(188,51): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(188,51): warning C4244:             T=float
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(188,51): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(188,51): warning C4244:         and
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(188,51): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(188,51): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(188,51): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(212,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(212,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(214,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(214,31): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(341,101): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(341,101): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(341,101): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(341,101): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(341,101): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(341,79): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(341,79): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(341,79): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(341,79): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(341,79): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(426,79): warning C4244: '=': conversion from 'T' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(426,79): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(426,79): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(426,79): warning C4244:             T=float
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(426,79): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(426,79): warning C4244:         and
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(426,79): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(426,79): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(426,79): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(427,78): warning C4244: '=': conversion from 'T' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(427,78): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(427,78): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(427,78): warning C4244:             T=float
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(427,78): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(427,78): warning C4244:         and
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(427,78): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(427,78): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(427,78): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(527,20): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(527,20): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(527,20): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(527,20): warning C4244:             T=float
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(527,20): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(528,19): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(528,19): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(528,19): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(528,19): warning C4244:             T=float
+E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(528,19): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Entity.hpp(67,36): warning C4244: 'argument': conversion from '_Ty' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Entity.hpp(67,36): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Entity.hpp(67,36): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Entity.hpp(67,36): warning C4244:             _Ty=int
+E:\Game Project\SFML_Project\A4\Entity.hpp(67,36): warning C4244:         ]
+  (compiling source file 'Scene_MapEditor.cpp')
+  E:\Game Project\SFML_Project\A4\Entity.hpp(67,36):
+  the template instantiation context (the oldest one first) is
+  	E:\Game Project\SFML_Project\A4\Scene_MapEditor.cpp(62,11):
+  	see reference to function template instantiation 'T &Entity::addComponent<CTransform,Vec2&,Vec2,Vec2,int>(Vec2 &,Vec2 &&,Vec2 &&,int &&)' being compiled
+          with
+          [
+              T=CTransform
+          ]
+  
+  Scene_Menu.cpp
+E:\Game Project\SFML_Project\A4\Components.hpp(204,27): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+  (compiling source file 'Scene_Menu.cpp')
+  
+E:\Game Project\SFML_Project\A4\Scene_Menu.cpp(52,60): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Menu.cpp(52,60): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Menu.cpp(52,60): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Menu.cpp(52,60): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\Scene_Menu.cpp(52,60): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Entity.hpp(67,36): warning C4244: 'argument': conversion from '_Ty' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Entity.hpp(67,36): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Entity.hpp(67,36): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Entity.hpp(67,36): warning C4244:             _Ty=int
+E:\Game Project\SFML_Project\A4\Entity.hpp(67,36): warning C4244:         ]
+  (compiling source file 'Scene_Menu.cpp')
+  E:\Game Project\SFML_Project\A4\Entity.hpp(67,36):
+  the template instantiation context (the oldest one first) is
+  	E:\Game Project\SFML_Project\A4\Scene_Menu.cpp(52,9):
+  	see reference to function template instantiation 'T &Entity::addComponent<CTransform,Vec2,Vec2,Vec2,int>(Vec2 &&,Vec2 &&,Vec2 &&,int &&)' being compiled
+          with
+          [
+              T=CTransform
+          ]
+  
+  Scene_Play.cpp
+E:\Game Project\SFML_Project\A4\Components.hpp(204,27): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+  (compiling source file 'Scene_Play.cpp')
+  
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(61,60): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(61,60): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(61,60): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(61,60): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(61,60): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(61,40): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(61,40): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(61,40): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(61,40): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(61,40): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(62,69): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(62,69): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(62,69): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(62,69): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(62,69): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(62,45): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(62,45): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(62,45): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(62,45): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(62,45): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(70,34): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(70,34): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(70,34): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(70,34): warning C4244:             T=float
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(70,34): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(70,34): warning C4244:         and
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(70,34): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(70,34): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(70,34): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(69,34): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(69,34): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(69,34): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(69,34): warning C4244:             T=float
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(69,34): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(69,34): warning C4244:         and
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(69,34): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(69,34): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(69,34): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(68,67): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(68,67): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(68,67): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(68,67): warning C4244:             T=float
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(68,67): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(68,67): warning C4244:         and
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(68,67): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(68,67): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(68,67): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(67,84): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(67,84): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(67,84): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(67,84): warning C4244:             T=float
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(67,84): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(67,84): warning C4244:         and
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(67,84): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(67,84): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(67,84): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(107,44): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(107,44): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(107,44): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(107,44): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(107,44): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(107,37): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(107,37): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(107,37): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(107,37): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(107,37): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(126,44): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(126,44): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(126,44): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(126,44): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(126,44): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(126,37): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(126,37): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(126,37): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(126,37): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(126,37): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(155,44): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(155,44): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(155,44): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(155,44): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(155,44): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(155,37): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(155,37): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(155,37): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(155,37): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(155,37): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(256,144): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(379,49): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(380,49): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(476,35): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(479,37): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(482,37): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(485,35): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(491,60): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(491,56): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(491,76): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(491,70): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(709,77): warning C4244: '=': conversion from 'T' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(709,77): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(709,77): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(709,77): warning C4244:             T=float
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(709,77): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(709,77): warning C4244:         and
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(709,77): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(709,77): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(709,77): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(710,76): warning C4244: '=': conversion from 'T' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(710,76): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(710,76): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(710,76): warning C4244:             T=float
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(710,76): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(710,76): warning C4244:         and
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(710,76): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(710,76): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(710,76): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(959,20): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(959,20): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(959,20): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(959,20): warning C4244:             T=float
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(959,20): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(960,19): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(960,19): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(960,19): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(960,19): warning C4244:             T=float
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(960,19): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1094,60): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1094,60): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1094,60): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1094,60): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1094,60): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1094,40): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1094,40): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1094,40): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1094,40): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1094,40): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1095,66): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1095,66): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1095,66): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1095,66): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1095,66): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1095,44): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1095,44): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1095,44): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1095,44): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1095,44): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1104,34): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1104,34): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1104,34): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1104,34): warning C4244:             T=float
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1104,34): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1104,34): warning C4244:         and
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1104,34): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1104,34): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1104,34): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1103,34): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1103,34): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1103,34): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1103,34): warning C4244:             T=float
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1103,34): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1103,34): warning C4244:         and
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1103,34): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1103,34): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1103,34): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1102,67): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1102,67): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1102,67): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1102,67): warning C4244:             T=float
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1102,67): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1102,67): warning C4244:         and
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1102,67): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1102,67): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1102,67): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1101,84): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1101,84): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1101,84): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1101,84): warning C4244:             T=float
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1101,84): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1101,84): warning C4244:         and
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1101,84): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1101,84): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1101,84): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1225,49): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1226,49): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1322,35): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1325,37): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1328,37): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1331,35): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1337,60): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1337,56): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1337,76): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1337,70): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1486,72): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1486,72): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1486,72): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1486,72): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1486,72): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1486,52): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1486,52): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1486,52): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1486,52): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1486,52): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1491,55): warning C4244: '=': conversion from 'T' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1491,55): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1491,55): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1491,55): warning C4244:             T=float
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1491,55): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1491,55): warning C4244:         and
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1491,55): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1491,55): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1491,55): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1492,56): warning C4244: '=': conversion from 'T' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1492,56): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1492,56): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1492,56): warning C4244:             T=float
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1492,56): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1492,56): warning C4244:         and
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1492,56): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1492,56): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1492,56): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1500,72): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1500,72): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1500,72): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1500,72): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1500,72): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1500,52): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1500,52): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1500,52): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1500,52): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1500,52): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1505,55): warning C4244: '=': conversion from 'T' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1505,55): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1505,55): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1505,55): warning C4244:             T=float
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1505,55): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1505,55): warning C4244:         and
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1505,55): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1505,55): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1505,55): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1506,56): warning C4244: '=': conversion from 'T' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1506,56): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1506,56): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1506,56): warning C4244:             T=float
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1506,56): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1506,56): warning C4244:         and
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1506,56): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1506,56): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1506,56): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1605,76): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1605,76): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1605,76): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1605,76): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1605,76): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1605,56): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1605,56): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1605,56): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1605,56): warning C4244:             T=unsigned int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1605,56): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1610,144): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1689,90): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1753,77): warning C4244: '=': conversion from 'T' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1753,77): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1753,77): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1753,77): warning C4244:             T=float
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1753,77): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1753,77): warning C4244:         and
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1753,77): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1753,77): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1753,77): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1754,76): warning C4244: '=': conversion from 'T' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1754,76): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1754,76): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1754,76): warning C4244:             T=float
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1754,76): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1754,76): warning C4244:         and
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1754,76): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1754,76): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(1754,76): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2031,44): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2031,44): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2031,44): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2031,44): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2031,44): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2031,37): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2031,37): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2031,37): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2031,37): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2031,37): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2091,44): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2091,44): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2091,44): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2091,44): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2091,44): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2091,37): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2091,37): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2091,37): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2091,37): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2091,37): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2120,44): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2120,44): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2120,44): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2120,44): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2120,44): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2120,37): warning C4244: 'argument': conversion from 'float' to 'T', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2120,37): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2120,37): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2120,37): warning C4244:             T=int
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2120,37): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2255,20): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2255,20): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2255,20): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2255,20): warning C4244:             T=float
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2255,20): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2256,19): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2256,19): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2256,19): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2256,19): warning C4244:             T=float
+E:\Game Project\SFML_Project\A4\Scene_Play.cpp(2256,19): warning C4244:         ]
+E:\Game Project\SFML_Project\A4\Entity.hpp(67,36): warning C4244: 'argument': conversion from '_Ty' to 'float', possible loss of data
+E:\Game Project\SFML_Project\A4\Entity.hpp(67,36): warning C4244:         with
+E:\Game Project\SFML_Project\A4\Entity.hpp(67,36): warning C4244:         [
+E:\Game Project\SFML_Project\A4\Entity.hpp(67,36): warning C4244:             _Ty=int
+E:\Game Project\SFML_Project\A4\Entity.hpp(67,36): warning C4244:         ]
+  (compiling source file 'Scene_Play.cpp')
+  E:\Game Project\SFML_Project\A4\Entity.hpp(67,36):
+  the template instantiation context (the oldest one first) is
+  	E:\Game Project\SFML_Project\A4\Scene_Play.cpp(305,11):
+  	see reference to function template instantiation 'T &Entity::addComponent<CTransform,Vec2,Vec2,Vec2,int>(Vec2 &&,Vec2 &&,Vec2 &&,int &&)' being compiled
+          with
+          [
+              T=CTransform
+          ]
+  
+  TXT.cpp
+E:\Game Project\SFML_Project\A4\TXT.cpp(90,75): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+E:\Game Project\SFML_Project\A4\TXT.cpp(124,22): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+E:\Game Project\SFML_Project\A4\TXT.cpp(125,16): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Vec2.cpp
+E:\Game Project\SFML_Project\A4\Vec2.cpp(93,13): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+  A4.vcxproj -> E:\Game Project\SFML_Project\x64\Debug\A4.exe
   'pwsh.exe' is not recognized as an internal or external command,
   operable program or batch file.

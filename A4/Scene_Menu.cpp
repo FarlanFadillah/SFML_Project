@@ -94,11 +94,11 @@ void SceneMenu::sDoAction(const Action& action)
 		}
 		else if (action.name() == "NEW GAME")
 		{
-			m_game->changeScene("OFFICE", std::make_shared<OfficeScene>(m_game, "res/images/tile/Miami_Metro_Office.tmx"));
+			m_game->changeScene("OFFICE", std::make_shared<OfficeScene>(m_game, "res/images/tile/Miami_Metro_Office.json"));
 		}
 		else if (action.name() == "DEXTER APART")
 		{
-			m_game->changeScene("CRIME_SCENE", std::make_shared<CrimeScene>(m_game, "res/map/crime_scene/01/Dexter_Apart.tmx"));
+			m_game->changeScene("CRIME_SCENE", std::make_shared<CrimeScene>(m_game, "res/map/crime_scene/01/Dexter_Apart.json"));
 		}
 		else if (action.name() == "LOAD")
 		{

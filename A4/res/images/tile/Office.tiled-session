@@ -3,17 +3,33 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "Miami_Metro_Office.tmx",
+    "activeFile": "Miami_Metro_Office.json",
     "expandedProjectPaths": [
         "."
     ],
     "fileStates": {
+        "E:/Game Project/SFML_Project/A4/res/map/crime_scene/01/Dexter_Apart.json": {
+            "scale": 2,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 224.75,
+                "y": 187.25
+            }
+        },
+        "Miami_Metro_Office.json": {
+            "scale": 1.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 404.33333333333326,
+                "y": 625.6666666666666
+            }
+        },
         "Miami_Metro_Office.tmx": {
             "scale": 5.5,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 360.0909090909091,
-                "y": 509.5454545454546
+                "x": 359.3636363636364,
+                "y": 509
             }
         },
         "book_self_1.tsx": {
@@ -88,7 +104,7 @@
     "last.imagePath": "E:/OpenGLProjects/A4/A4/res/images/wall",
     "last.objectTemplatePath": "E:/OpenGLProjects/A4/A4/res/images/tile",
     "map.height": 11,
-    "map.lastUsedFormat": "tmx",
+    "map.lastUsedFormat": "json",
     "map.tileHeight": 16,
     "map.tileWidth": 16,
     "map.width": 20,
@@ -108,23 +124,25 @@
         "extend_desk_2.tsx",
         "extend_desk_1.tsx",
         "desk_3.tsx",
-        "desk_4.tsx"
+        "desk_4.tsx",
+        "E:/Game Project/SFML_Project/A4/res/map/crime_scene/01/Dexter_Apart.json",
+        "Miami_Metro_Office.json"
     ],
     "project": "Office.tiled-project",
     "property.type": "int",
     "recentFiles": [
         "office_floor.tsx",
-        "desk_4.tsx",
-        "desk_3.tsx",
-        "extend_desk_1.tsx",
-        "extend_desk_2.tsx",
-        "desk_2.tsx",
-        "wall_office.tsx",
-        "painting_2.tsx",
-        "book_self_1.tsx",
-        "extended_desk.tsx",
+        "Miami_Metro_Office.tmx",
+        "border_wall.tsx",
+        "furniture_office.tsx",
+        "desk_1.tsx",
+        "icon.tsx",
         "couch_2_Right.tsx",
-        "icon.tsx"
+        "extended_desk.tsx",
+        "book_self_1.tsx",
+        "painting_2.tsx",
+        "wall_office.tsx",
+        "desk_2.tsx"
     ],
     "tileset.lastUsedFilter": "Tiled tileset files (*.tsx *.xml)",
     "tileset.lastUsedFormat": "tsx",

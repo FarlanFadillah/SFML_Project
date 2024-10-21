@@ -200,7 +200,7 @@ void SceneInterview::sDrawImGui()
 		auto& dialogue = m_ds.dialogue[m_ds.i];
 		if (m_ds.state == 1 && dialogue.hasOption)
 		{
-			ImGui::SetNextWindowPos(ImVec2(1056, 450), ImGuiCond_Always, ImVec2(0.5f, 0.5f));
+			ImGui::SetNextWindowPos(ImVec2(1000, 450), ImGuiCond_Always, ImVec2(0, 0.5F));
 			ImGui::Begin("", nullptr,
 				ImGuiWindowFlags_NoTitleBar |
 				ImGuiWindowFlags_NoMove |
@@ -226,7 +226,7 @@ void SceneInterview::sDrawImGui()
 			ImGui::End();
 		}
 		else {
-			ImGui::SetNextWindowPos(ImVec2(1150, 635), ImGuiCond_Always);
+			ImGui::SetNextWindowPos(ImVec2(1000, 450), ImGuiCond_Always);
 
 			ImGui::Begin("", nullptr,
 				ImGuiWindowFlags_NoTitleBar |
@@ -303,7 +303,7 @@ void SceneInterview::skipTypingDialogeLine(DialogueScript& ds)
 {
 	typing = false;
 	ds.typing = "";
-	for (auto& c : ds.line)
+	for (auto& c : dl::getDialogueText(ds.line))
 	{
 		ds.text.setString(ds.typing + c);
 		if (ds.text.getGlobalBounds().width >= 932)

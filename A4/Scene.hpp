@@ -77,6 +77,11 @@ public:
 	void guiSetup(std::string path, EntityManager& m_entityManager);
 	void proceedDialogues(EntityManager& m_entityManager);
 
+
+	void loadMapJson(const std::string& path, EntityManager& m_entityManager, Vec2& worldSize);
+	void loadObjectJson(const std::string& path, EntityManager& entityManager, std::shared_ptr<Entity>& m_player);
+	void spawnObjects(std::string& className, std::string& animationName, const Vec2& pos, Vec2 boundingBox, Vec2 off, EntityManager& entityManager, std::shared_ptr<Entity>& m_player);
+
 	std::string formatNumber(int number);
 
 

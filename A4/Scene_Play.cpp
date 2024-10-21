@@ -93,6 +93,7 @@ void CrimeScene::sRender()
     m_game->window().setView(CameraView);
     if (m_drawTextures)
     {
+        //std::cout << m_entityManager.getEntities("Tile").size() << "\n";
         for (auto e : m_entityManager.getEntities("Tile"))
         {
             auto& pos = e->getComponent<CTransform>().pos;
@@ -289,12 +290,9 @@ void CrimeScene::sRender()
 void CrimeScene::loadLevel(const std::string& levelPath)
 {
     // Reset entity manager on every new level
-    m_entityManager = EntityManager();
-    std::ifstream fin(levelPath);
-    std::ifstream in(levelPath);
-
-    loadMap(fin, "Tile_Layer_1", "width=\"", "height=\"");
-    loadObject(in, "object_layer_1", "</objectgroup>");
+    m_entityManager = EntityManager(); 
+    loadMapJson(levelPath, m_entityManager, m_worldSize); 
+    loadObjectJson(levelPath, m_entityManager, m_player); 
 }
 
 void CrimeScene::spawnPlayer()
@@ -313,191 +311,6 @@ void CrimeScene::spawnPlayer()
     entity->addComponent<CBoundingBox>(Vec2(12 * 4, 6 * 4), Vec2(2 * 4, 9 * 4));
 
     m_player = entity;
-}
-
-void CrimeScene::spawnObjects(std::string& className, std::string& animationName, Vec2& pos, Vec2 boundingBox, Vec2 off)
-{
-    // Span object "temporary code"
-    std::string id;
-    if (className.find("NPC") != std::string::npos)
-    {
-        id = className.substr(4, className.length() - 4);
-        className = "NPC";
-    }
-
-    auto object = m_entityManager.addEntity(className);
-    object->setName(id);
-    //std::cout << animationName << "\n";
-    object->addComponent<CTransform>(pos * 4.0f, // POSITION
-        Vec2(0.0f, 0.0f), // VELOCITY
-        Vec2(4.0f, 4.0f), // SCALE  scale set to 4x16, 4x16
-        0);
-    object->addComponent<CAnimation>(
-        m_game->assets().getAnimation(animationName),
-        true
-    );
-    auto& size = object->getComponent<CAnimation>().animation.getSize();
-
-    Vec2 bb(size.x * 4.0f, size.y * 4.0f);
-    if (boundingBox.x > 0 && boundingBox.y > 0)
-    {
-        object->addComponent<CBoundingBox>(boundingBox * 4, off * 4);
-    }
-    else
-    {
-        object->addComponent<CBoundingBox>(bb, Vec2(0, 0));
-    }
-
-
-    if (className == "Player")
-    {
-        object->addComponent<CState>("IdleD");
-        m_player = object;
-    }
-
-    //determine whos get the cDraggable component
-    if (className == "Furniture")
-    {
-        object->addComponent<CDraggAble>();
-    }
-
-    //npc dialogue set up
-    if (className == "NPC")
-    {
-        object->addComponent<CDialogue>(dl::setupdialogue("res/config/dialogue/" + id + "/EN.ini"));
-    }
-
-}
-
-void CrimeScene::loadMap(std::istream& fin, std::string word, std::string prefix1, std::string prefix2)
-{
-    std::string input;
-    while (getline(fin, input))
-    {
-        if (input.find(word) != std::string::npos)
-        {
-            m_worldSize.x = ln::getIntFromString(input, prefix1, 3);
-            m_worldSize.y = ln::getIntFromString(input, prefix2, 3);
-
-            getline(fin, input);
-
-            int i = 0;
-            int col = 0;
-            int row = 0;
-            while (col < m_worldSize.x && row < m_worldSize.y)
-            {
-                getline(fin, input, ',');
-                input = ln::removeSpacesAndNewlines(input);
-                if (input.find("</data>") != std::string::npos)
-                {
-                    input = input.substr(0, input.find("</data>"));
-                }
-                if (input == "0") {
-                    col++;
-                    if (col >= m_worldSize.x)
-                    {
-                        getline(fin, input);
-                        row++;
-                        col = 0;
-                    }
-                    continue;
-                }
-                auto entity = m_entityManager.addEntity("Tile");
-                entity->addComponent<CTransform>(Vec2((col * m_gridSize.x) + m_gridSize.x / 2, (row * m_gridSize.y) + m_gridSize.y / 2), // POSITION
-                    Vec2(0.0f, 0.0f), // VELOCITY
-                    Vec2(4.0f, 4.0f), // SCALE  scale set to 4x16, 4x16
-                    0);
-
-                entity->addComponent<CAnimation>(
-                    m_game->assets().getAnimation(input),
-                    true
-                );
-                col++;
-                if (col >= m_worldSize.x)
-                {
-                    getline(fin, input);
-                    row++;
-                    col = 0;
-                }
-                i++;
-            }
-            return;
-        }
-    }
-}
-
-void CrimeScene::loadObject(std::istream& fin, std::string start, std::string end)
-{
-    std::string input;
-
-    std::string name, type, id;
-    float x = 0, y = 0;
-    int index = 1;
-
-    //for aabb
-    int offx, offy, wb, hb;
-    while (getline(fin, input))
-    {
-        if (input.find(start) != std::string::npos)
-        {
-            getline(fin, input);
-            while (true)
-            {
-                //std::cout << index << "\n";
-                index++;
-                if (input.find(end) != std::string::npos)
-                {
-                    break;
-                }
-                if (input.find("<properties>") != std::string::npos) continue;
-                x = std::stof(ln::getValueFromString(input, "x=\"", "\" y="));
-                y = std::stof(ln::getValueFromString(input, "y=\"", "\" width"));
-
-                if (input.find("/>") != std::string::npos)
-                {
-                    y -= std::stof(ln::getValueFromString(input, "height=\"", "\"/>")) / 2;
-                }
-                else
-                {
-                    y -= std::stof(ln::getValueFromString(input, "height=\"", "\">")) / 2;
-                }
-
-                x += std::stof(ln::getValueFromString(input, "width=\"", "\" height")) / 2;
-
-                Vec2 vec(x, y);
-                name = ln::getValueFromString(input, "name=\"", "\" type");
-
-                type = ln::getValueFromString(input, "type=\"", "\" gid");
-
-                getline(fin, input);
-                if (input.find("<properties>") != std::string::npos)
-                {
-                    getline(fin, input);
-                    hb = std::stof(ln::getValueFromString(input, "value=\"", "\"/>"));
-
-                    getline(fin, input);
-                    offx = std::stof(ln::getValueFromString(input, "value=\"", "\"/>"));
-
-                    getline(fin, input);
-                    offy = std::stof(ln::getValueFromString(input, "value=\"", "\"/>"));
-
-                    getline(fin, input);
-                    wb = std::stof(ln::getValueFromString(input, "value=\"", "\"/>"));
-
-                    getline(fin, input);
-                    getline(fin, input);
-                    getline(fin, input);
-
-                    spawnObjects(type, name, vec, Vec2(wb, hb), Vec2(offx, offy));
-                }
-                else
-                {
-                    spawnObjects(type, name, vec, Vec2(0, 0), Vec2(0, 0));
-                }
-            }
-            return;
-        }
-    }
 }
 
 void CrimeScene::update()
@@ -705,6 +518,7 @@ void CrimeScene::sCamera()
 
     CameraView.move(sf::Vector2f(distX * scale, distY * scale));
     
+
 
     m_rect.left = (CameraView.getCenter().x - (CameraView.getSize().x / 2)) - m_gridSize.x;
     m_rect.top = (CameraView.getCenter().y - (CameraView.getSize().y / 2)) - m_gridSize.y;
@@ -1109,12 +923,8 @@ void OfficeScene::loadLevel(const std::string& levelPath)
 {
     // Reset entity manager on every new level
     m_entityManager = EntityManager();
-    std::ifstream fin(levelPath);
-    std::ifstream in(levelPath);
-
-    loadMap(fin, "Tile_Layer_1", "width=\"", "height=\"");
-    loadObject(in, "object_layer_1", "</objectgroup>");
-    //spawnPlayer();
+    loadMapJson(levelPath, m_entityManager, m_worldSize);
+    loadObjectJson(levelPath, m_entityManager, m_player);
 }
 
 void OfficeScene::spawnPlayer()
@@ -1135,59 +945,6 @@ void OfficeScene::spawnPlayer()
     m_player = entity;
 }
 
-void OfficeScene::spawnObjects(std::string& className, std::string& animationName, Vec2& pos, Vec2 boundingBox, Vec2 off)
-{
-    // Span object "temporary code"
-    std::string id;
-    if (className.find("NPC") != std::string::npos) 
-    {
-        id = className.substr(4, className.length() - 4);  
-        className = "NPC"; 
-    }
-
-    auto object = m_entityManager.addEntity(className);
-    object->setName(id);
-    //std::cout << animationName << "\n";
-    object->addComponent<CTransform>(pos*4.0f, // POSITION
-        Vec2(0.0f, 0.0f), // VELOCITY
-        Vec2(4.0f, 4.0f), // SCALE  scale set to 4x16, 4x16
-        0);
-    object->addComponent<CAnimation>(
-        m_game->assets().getAnimation(animationName),
-        true
-    );
-    auto& size = object->getComponent<CAnimation>().animation.getSize();
-
-    Vec2 bb(size.x * 4.0f, size.y * 4.0f);
-    if (boundingBox.x > 0 && boundingBox.y > 0)
-    {
-        object->addComponent<CBoundingBox>(boundingBox * 4, off * 4);
-    }
-    else
-    {
-        object->addComponent<CBoundingBox>(bb, Vec2(0,0));
-    }
-
-
-    if (className == "Player")
-    {
-        object->addComponent<CState>("IdleD"); 
-        m_player = object;
-    }
-
-    //determine whos get the cDraggable component
-    if (className == "Furniture")
-    {
-        object->addComponent<CDraggAble>();
-    }
-
-    //npc dialogue set up
-    if (className == "NPC")
-    {
-        object->addComponent<CDialogue>(dl::setupdialogue("res/config/dialogue/" + id +"/EN.json"));
-    }
-
-}
 
 void OfficeScene::playRecord(int& frame)
 {
@@ -1214,138 +971,6 @@ void OfficeScene::record(const Action& action)
 {
     //actionTextRecord += std::to_string(currentOfficeSceneFrame) + " " + action.name() + " " + action.type() + "\n";
 }
-
-void OfficeScene::loadMap(std::istream& fin, std::string word, std::string prefix1, std::string prefix2)
-{
-    std::string input;
-    while (getline(fin, input))
-    {
-        if (input.find(word) != std::string::npos)
-        {
-            m_worldSize.x = ln::getIntFromString(input, prefix1, 3);
-            m_worldSize.y = ln::getIntFromString(input, prefix2, 3);
-
-            getline(fin, input);
-
-            int i = 0;
-            int col = 0;
-            int row = 0;
-            while (col < m_worldSize.x && row < m_worldSize.y)
-            {
-                getline(fin, input, ',');
-                input = ln::removeSpacesAndNewlines(input);  
-                if (input.find("</data>") != std::string::npos)
-                {
-                    input = input.substr(0, input.find("</data>"));
-                }
-                if (input == "0") {
-                    col++; 
-                    if (col >= m_worldSize.x)
-                    {
-                        getline(fin, input);   
-                        row++; 
-                        col = 0; 
-                    }
-                    continue;
-                }
-                auto entity = m_entityManager.addEntity("Tile");
-                entity->addComponent<CTransform>(Vec2((col * m_gridSize.x)+ m_gridSize.x/2, (row * m_gridSize.y)+ m_gridSize.y/2), // POSITION
-                    Vec2(0.0f, 0.0f), // VELOCITY
-                    Vec2(4.0f, 4.0f), // SCALE  scale set to 4x16, 4x16
-                    0);
-
-                entity->addComponent<CAnimation>(
-                    m_game->assets().getAnimation(input),
-                    true
-                );
-                col++;
-                if (col >= m_worldSize.x)
-                {
-                    getline(fin, input);
-                    row++;
-                    col = 0;
-                }
-                i++;
-            }
-            return;
-        }
-    }
-}
-
-void OfficeScene::loadObject(std::istream& fin, std::string start, std::string end)
-{
-    std::string input;
-
-    std::string name, type, id;
-    float x = 0, y = 0;
-    int index = 1;
-
-    //for aabb
-    int offx, offy, wb, hb;
-    while (getline(fin, input))
-    {
-        if (input.find(start) != std::string::npos)
-        {
-            getline(fin, input);
-            while (true)
-            {
-                //std::cout << index << "\n";
-                index++;
-                if (input.find(end) != std::string::npos)
-                {
-                    break;
-                }
-                if (input.find("<properties>") != std::string::npos) continue;
-                x = std::stof(ln::getValueFromString(input, "x=\"", "\" y="));
-                y = std::stof(ln::getValueFromString(input, "y=\"", "\" width"));
-
-                if (input.find("/>") != std::string::npos)
-                {
-                    y -= std::stof(ln::getValueFromString(input, "height=\"", "\"/>"))/2;
-                }
-                else
-                {
-                    y -= std::stof(ln::getValueFromString(input, "height=\"", "\">"))/2;
-                }
-
-                x += std::stof(ln::getValueFromString(input, "width=\"", "\" height")) / 2;
-
-                Vec2 vec(x,y);
-                name = ln::getValueFromString(input, "name=\"", "\" type");
-
-                type = ln::getValueFromString(input, "type=\"", "\" gid");
-
-                getline(fin, input);
-                if (input.find("<properties>") != std::string::npos)
-                {
-                    getline(fin, input);
-                    hb = std::stof(ln::getValueFromString(input, "value=\"", "\"/>"));
-
-                    getline(fin, input);
-                    offx = std::stof(ln::getValueFromString(input, "value=\"", "\"/>"));
-
-                    getline(fin, input);
-                    offy = std::stof(ln::getValueFromString(input, "value=\"", "\"/>"));
-
-                    getline(fin, input);
-                    wb = std::stof(ln::getValueFromString(input, "value=\"", "\"/>"));
-
-                    getline(fin, input);
-                    getline(fin, input);
-                    getline(fin, input);
-                    
-                    spawnObjects(type, name, vec, Vec2(wb, hb), Vec2(offx, offy));
-                }
-                else
-                {
-                    spawnObjects(type, name, vec, Vec2(0, 0), Vec2(0,0)); 
-                }
-            }
-            return;
-        }
-    }
-}
-
 void OfficeScene::update()
 {
     if (!m_paused)
@@ -1728,7 +1353,7 @@ void OfficeScene::sCamera()
 
     CameraView.move(sf::Vector2f(distX * scale, distY*scale));
     //std::cout << CameraView.getCenter().x - CameraView.getSize().x / 2 << "\n";
-    if (m_cameraLimit && !(CameraView.getSize().x <= m_worldSize.x * m_gridSize.x || CameraView.getSize().y <= m_worldSize.y * m_gridSize.y))
+    /*if (m_cameraLimit && !(CameraView.getSize().x <= m_worldSize.x * m_gridSize.x || CameraView.getSize().y <= m_worldSize.y * m_gridSize.y))
     {
         if (CameraView.getCenter().x - CameraView.getSize().x / 2 <= 0)
         {
@@ -1747,14 +1372,13 @@ void OfficeScene::sCamera()
         {
             CameraView.setCenter(CameraView.getCenter().x, (m_worldSize.y * m_gridSize.y) - CameraView.getSize().y / 2);
         }
-   }
+   }*/
 
    
     m_rect.left = (CameraView.getCenter().x - (CameraView.getSize().x / 2)) - m_gridSize.x;
     m_rect.top = (CameraView.getCenter().y - (CameraView.getSize().y / 2)) - m_gridSize.y;
 
 }
-
 void OfficeScene::sMovement()
 {
     Vec2 playerVelocity(0, 0);

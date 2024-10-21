@@ -2,11 +2,15 @@
 #include "Scene_Computer.h"
 #include <sstream>
 
+
+// register an action for the app
 void App::registerAction(int inputKey, const std::string& actionName)
 {
 	m_actionMap[inputKey] = actionName;
 }
 
+
+// adding 0 if the number is one digit
 std::string App::formatNumber(int number)
 {
 	std::ostringstream oss;
@@ -26,6 +30,7 @@ App::App()
 {
 }
 
+
 App::App(SceneComputer* sceneComputer)
 	:m_scene(sceneComputer)
 {
@@ -33,7 +38,7 @@ App::App(SceneComputer* sceneComputer)
 
 
 
-
+// return whether the pos (which is the mouse pos) is inside of and entity (e.g button, textinput, etc)
 bool App::isInside(Vec2 pos, std::shared_ptr<Entity> e)
 {
 	auto& scale = e->getComponent<CTransform>().scale;
@@ -49,6 +54,7 @@ bool App::isInside(Vec2 pos, std::shared_ptr<Entity> e)
 
 }
 
+// return whether a button is pressed by mouse pos
 void App::buttonPressed(Vec2 pos, const std::string& name, EntityManager& m_entityManager)
 {
 	for (auto& e : m_entityManager.getEntities(name))
@@ -69,6 +75,7 @@ void App::buttonPressed(Vec2 pos, const std::string& name, EntityManager& m_enti
 	}
 }
 
+// return whether a mouse pointer is hovering over a button
 void App::buttonHover(Vec2& pos, const std::string& name, EntityManager& m_entityManager)
 {
 	for (auto& e : m_entityManager.getEntities(name))

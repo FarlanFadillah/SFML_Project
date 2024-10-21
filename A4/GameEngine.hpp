@@ -13,8 +13,6 @@ class Scene; // Resolve circular dependency
 using SceneMap = std::map<std::string, std::shared_ptr<Scene>>;
 struct WindowConfig { int W, H, FL, FS; std::string title; };
 
-
-
 class GameEngine
 {
 protected:

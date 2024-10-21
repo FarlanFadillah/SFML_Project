@@ -68,10 +68,6 @@ private:
 		const std::string& animationName, bool repeat); // helper function
 	void drawLine(const Vec2& p1, const Vec2& p2);
 	void spawnPlayer();
-	void spawnObjects(std::string& className, std::string& animationName, Vec2& pos, Vec2 boundingBox, Vec2 off);
-
-	void loadMap(std::istream& fin, std::string word, std::string prefix1, std::string prefix2);
-	void loadObject(std::istream& fin, std::string start, std::string end);
 	void sDragAndDrop();
 
 	bool checkCollision(Vec2 ca, Vec2 cb, float ra, float rb);
@@ -118,7 +114,7 @@ private:
 	bool					m_debugMode		= false;
 	const Vec2              m_gridSize      = { 64, 64 };
 	sf::IntRect				m_rect;
-	Vec2					m_worldSize;
+	Vec2					m_worldSize	;
 	Vec2					m_pos;
 	Vec2					m_lastDragPos = { 0,0 };
 	sf::CircleShape			m_circleMouse;
@@ -150,6 +146,7 @@ private:
 	void sDrawImGui()					 override;
 	void sCamera();
 
+
 	void init(const std::string& levelPath);
 	void loadLevel(const std::string& levelPath);
 	void sMovement();
@@ -163,7 +160,6 @@ private:
 
 	void playRecord(int& frame);
 	void record(const Action& action);
-	void loadMap(std::istream& fin, std::string word, std::string prefix1, std::string prefix2);
 	void loadObject(std::istream& fin, std::string start, std::string end); 
 	void sDragAndDrop();
 

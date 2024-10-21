@@ -9,6 +9,7 @@ Assets::Assets()
 {
 }
 
+// adding texture, required name, path of image, and boolean whether the image is smooth or not
 bool Assets::addTexture(const std::string& textureName, const std::string& path,
                         bool smooth)
 {
@@ -26,6 +27,9 @@ bool Assets::addTexture(const std::string& textureName, const std::string& path,
     return true;
 }
 
+
+// adding texture, required name, path of image, and boolean whether the image is smooth or not
+// it also required a specific bounding box
 bool Assets::addTexture(const std::string& textureName, const std::string& path,
                         int posX, int posY, int width, int height, bool smooth)
 {
@@ -44,34 +48,22 @@ bool Assets::addTexture(const std::string& textureName, const std::string& path,
     return true;
 }
 
+// adding font, required a name, and path to font dir (ttf, twf)
 bool Assets::addFont(const std::string& fontName, const std::string& path)
 {
-    ImGuiIO& io = ImGui::GetIO();
     sf::Font font;
-
-    
-
     if (!font.loadFromFile(path))
     {
         std::cerr << "Failed to load font: " << fontName << " " << path <<
             std::endl;
         return false;
     }
-    else
-    {
-        /*std::cout << path.c_str() << "\n";
-        ImFont* imguiFont = io.Fonts->AddFontFromFileTTF(path.c_str(), 24.0f);
-        if (imguiFont == nullptr) 
-        {
-            std::cerr << "Failed to load ImGui font: " << fontName << " " << path << std::endl;
-        }else
-            m_imguiFonts[fontName] = imguiFont;*/
-    }
-
     m_fontMap[fontName] = font;
     return true;
 }
 
+// adding animation required name, texture name that exist in the assets, total frame, and duration
+// for each frame
 bool Assets::addAnimation(const std::string& animationName,
                           const std::string& textureName,
                           const size_t keyframesCount, const size_t duration)
@@ -84,6 +76,12 @@ bool Assets::addAnimation(const std::string& animationName,
     return true;
 }
 
+
+// adding tileset, required path
+// x = width of each tile
+// y = height of each tile
+// w = number of tile per row
+// h = number of tile per column
 bool Assets::addTileSet(const std::string& path, int x, int y, int w, int h)
 {
 
@@ -109,39 +107,34 @@ bool Assets::addTileSet(const std::string& path, int x, int y, int w, int h)
     return true;
 }
 
+// getting texture by its name
 const sf::Texture& Assets::getTexture(const std::string& textureName) const
 {
     // TODO: handle not found case
     return m_textureMap.at(textureName);
 }
 
+// getting animation by its name
 const Animation& Assets::getAnimation(const std::string& animationName) const
 {
     // TODO: handle not found case
     return m_animationMap.at(animationName);
 }
 
+// getting font by its name
 const sf::Font& Assets::getFont(const std::string& fontName) const
 {
     // TODO: handle not found case
     return m_fontMap.at(fontName);
 }
 
-ImFont* Assets::getImGuiFont(const std::string& fontName) const
-{
-    auto font = m_imguiFonts.find(fontName);
-    if(font != m_imguiFonts.end())
-    {
-        return font->second;
-    }
-    return nullptr;
-}
-
+// getting all tileset
 const std::map<int, sf::Texture> Assets::getTileSet() const
 {
     return m_tileSet;
 }
 
+// reading assets config, usually the name is Assets.ini
 void Assets::loadFromFile(const std::string& filePath)
 {
     
@@ -224,6 +217,7 @@ void Assets::loadFromFile(const std::string& filePath)
     
 }
 
+// not remember what is this for, probably useless x)
 void Assets::loadObjectTexture(std::string name, int gridx, int gridy, int width, int height, std::string path, int total)
 {
     int col = 0, row = 0, index = 1, tileSize = 16; 
@@ -249,6 +243,7 @@ void Assets::loadObjectTexture(std::string name, int gridx, int gridy, int width
     }
 }
 
+// clear all the assets ==> currently not using this anymore
 void Assets::clear()
 {
     m_animationMap.clear();

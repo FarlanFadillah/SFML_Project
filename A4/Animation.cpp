@@ -9,7 +9,8 @@ Animation::Animation(const std::string& name, const sf::Texture& texture)
 	: Animation(name, texture, 1, 0)
 {
 }
-
+// keyframesCount is the total of frame for animation
+// duration is for how long each frame is going to render
 Animation::Animation(const std::string& name, const sf::Texture& texture,
                      size_t keyframesCount, size_t duration)
 	: m_name(name)
@@ -28,11 +29,13 @@ Animation::Animation(const std::string& name, const sf::Texture& texture,
 	);
 }
 
+// getting sprite of an animation
 sf::Sprite& Animation::getSprite()
 {
 	return m_sprite;
 }
 
+// set the sprite of an animation
 sf::Sprite& Animation::setSprite(int index)
 {
 	m_sprite.setTextureRect(
@@ -41,6 +44,7 @@ sf::Sprite& Animation::setSprite(int index)
 	return m_sprite;
 }
 
+// update the frame for certain amount of time
 void Animation::update()
 {
 	if (m_duration <= 0) return;
@@ -52,16 +56,19 @@ void Animation::update()
 	m_sprite.setTextureRect(rectange);
 }
 
+// getting size of sprite each frame
 const Vec2& Animation::getSize() const
 {
 	return m_size;
 }
 
+// getting the name of animation
 const std::string& Animation::getName() const
 {
 	return m_name;
 }
 
+// return whether the animation is ended
 bool Animation::hasEnded() const
 {
 	// At least one keyframe has been played but current keyframe is still the 0th,
@@ -69,6 +76,7 @@ bool Animation::hasEnded() const
 	return (m_gameFrames > m_duration && m_currentKeyframe == 0) ? true : false;
 }
 
+// return the index of frame that currently rendered
 size_t Animation::getGameFrame() const
 {
 	return m_gameFrames;

@@ -330,8 +330,6 @@ void Scene::guiSetup(std::string path, EntityManager& m_entityManager)
 			auto& scale = b->getComponent<CTransform>().scale;
 			b->addComponent<CBoundingBox>(Vec2(size.x * scale.x, size.y * scale.y));
 		}
-
-		std::cout << animName << "\n";
 	}
 }
 
@@ -351,6 +349,209 @@ void Scene::proceedDialogues(EntityManager& m_entityManager)
 			return;
 		}
 	}
+}
+
+void Scene::loadMapJson(const std::string& path, EntityManager& m_entityManager, Vec2& worldSize)
+{
+	// reading the json file
+	std::ifstream in(path);
+
+	// create a json object
+	Json::Value val; 
+	Json::Reader reader; 
+	 
+	// parse json file to json object
+	reader.parse(in, val); 
+
+	// getting layer
+	auto& layer = val["layers"];
+
+	// layer[0] is tile layer/ base layer
+    auto& tileLayer = layer[0];
+
+	//map size
+	worldSize.x = tileLayer["width"].asInt();
+	worldSize.y = tileLayer["height"].asInt();
+
+	// tile size
+	Vec2 gridSize(val["editorsettings"]["chunksize"]["width"].asFloat(), val["editorsettings"]["chunksize"]["height"].asFloat());
+	// map size x tile size you get the world size
+
+
+    int col = 0, row = 0;
+    int i = 0;
+
+	int count = 0;
+
+	std::cout << "Size of the map is " << worldSize.x << " x " << worldSize.y << "\n";
+	std::cout << "with a grid size " << gridSize.x << " x " << gridSize.y << "\n";
+    while (row < worldSize.y)
+    {
+		
+		//std::cout << tileLayer["data"][i].asString() << "\n";
+		// avoid 0, because our assets doesn't have animation/texture name 0
+		if (tileLayer["data"][i].asInt() != 0)
+		{
+			//count++;
+			//std::cout << tileLayer["data"][i] << " ";
+			// create entity with tag 'Tile'
+			auto entity = m_entityManager.addEntity("Tile");
+
+			// adding transform component to the tile
+			// set size origin to the center of the tile
+			entity->addComponent<CTransform>(Vec2((col * gridSize.x) + gridSize.x / 2, (row * gridSize.y) + gridSize.y / 2), // POSITION
+				Vec2(0.0f, 0.0f), // VELOCITY
+				Vec2(4.0f, 4.0f), // SCALE  scale set to 4x16, 4x16
+				0);
+
+			// set the animation/ texture for the tile
+			entity->addComponent<CAnimation>(
+				m_game->assets().getAnimation(tileLayer["data"][i].asString()),
+				true
+			);
+		}
+		/*else
+		{
+			std::cout << "  ";
+		}*/
+
+        col++;
+        i++;
+        if (col >= worldSize.x)
+        {
+			//std::cout << std::endl;
+            col = 0;
+            row++;
+        }
+    }
+	//std::cout << count << "\n";
+}
+
+// load object by reading json file
+void Scene::loadObjectJson(const std::string& path, EntityManager& entityManager, std::shared_ptr<Entity>& m_player)
+{
+	//map for properties
+	std::map<std::string, float> properties;
+
+	// reading the json file
+	std::ifstream in(path);
+
+	// create a json object
+	Json::Value val;
+	Json::Reader reader;
+
+	// parse json file to json object
+	reader.parse(in, val);
+
+	// getting layer
+	auto& layer = val["layers"];
+
+	//layer[1] is object layer
+	auto& objectLayer = layer[1];
+
+	// loop through all the objects
+	for (auto& obj : objectLayer["objects"])
+	{
+		// getting x, y position of an object
+		float x = obj["x"].asFloat();
+		float y = obj["y"].asFloat();
+
+		//getting the size of an object
+		float width = obj["width"].asFloat();
+		float height = obj["height"].asFloat();
+
+
+		// adjust the position to the center of the object/image
+		x += width / 2;
+		y -= height / 2; 
+
+
+		//getting type and name, as class entity, and animation name
+		std::string type = obj["type"].asString();
+		std::string name = obj["name"].asString();
+
+
+		//std::cout << type << "\n";
+		//check if the object has "properties" values
+		if (obj["properties"])
+		{
+
+			// getting all the properties
+			for (auto& prop : obj["properties"])
+			{
+				// save it to map of properties
+				properties[prop["name"].asString()] = prop["value"].asFloat();
+			}
+
+
+			// spawn object with certain bounding box and horizontal/vertical offset
+			spawnObjects(type, 
+						name, 
+						Vec2(x,y), 
+						Vec2(properties["wb"], properties["hb"]),
+						Vec2(properties["offx"], properties["offy"]),
+						entityManager, m_player);
+		}
+		else
+		{
+			spawnObjects(type, name, Vec2(x, y), Vec2(0, 0), Vec2(0, 0), entityManager, m_player);
+		}
+
+	}
+}
+
+void Scene::spawnObjects(std::string& className, std::string& animationName, const Vec2& pos, Vec2 boundingBox, Vec2 off, EntityManager& m_entityManager, std::shared_ptr<Entity>& m_player)
+{
+	// Span object "temporary code"
+	std::string id;
+	if (className.find("NPC") != std::string::npos)
+	{
+		id = className.substr(4, className.length() - 4);
+		className = "NPC";
+	}
+
+	auto object = m_entityManager.addEntity(className);
+	object->setName(id);
+	//std::cout << animationName << "\n";
+	object->addComponent<CTransform>(pos * 4.0f, // POSITION
+		Vec2(0.0f, 0.0f), // VELOCITY
+		Vec2(4.0f, 4.0f), // SCALE  scale set to 4x16, 4x16
+		0);
+	object->addComponent<CAnimation>(
+		m_game->assets().getAnimation(animationName),
+		true
+	);
+	auto& size = object->getComponent<CAnimation>().animation.getSize();
+
+	Vec2 bb(size.x * 4.0f, size.y * 4.0f);
+	if (boundingBox.x > 0 && boundingBox.y > 0)
+	{
+		object->addComponent<CBoundingBox>(boundingBox * 4, off * 4);
+	}
+	else
+	{
+		object->addComponent<CBoundingBox>(bb, Vec2(0, 0));
+	}
+
+
+	if (className == "Player")
+	{
+		object->addComponent<CState>("IdleD");
+		m_player = object;
+	}
+
+	//determine whos get the cDraggable component
+	if (className == "Furniture")
+	{
+		object->addComponent<CDraggAble>();
+	}
+
+	//npc dialogue set up
+	if (className == "NPC")
+	{
+		object->addComponent<CDialogue>(dl::setupdialogue("res/config/dialogue/" + id + "/EN.json"));
+	}
+
 }
 
 std::string Scene::formatNumber(int number)

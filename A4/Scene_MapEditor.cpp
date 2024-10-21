@@ -94,7 +94,7 @@ void SceneMapEditor::createTileButton()
             Vec2(2.0f, 2.0f), 
             Vec2(size.x*2, size.y*2)); // SCALE  scale set to 4x16, 4x16 
         auto tile = std::to_string(i);
-        entity->addComponent<CButton>(Action("SPAWN_TILE", "START", tile));
+        //entity->addComponent<CButton>(Action("SPAWN_TILE", "START", tile));
         col++;
         i++;
 
@@ -367,10 +367,6 @@ void SceneMapEditor::sDoAction(const Action& action)
             }
         }
         
-        else if (action.name() == "SPAWN_TILE")
-        {
-            spawnTile(action.tile());
-        }
         else if (action.name() == "MOUSE_MOVE")
         {
             mPos = windowToWorldPos(action.pos());

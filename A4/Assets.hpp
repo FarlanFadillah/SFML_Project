@@ -4,9 +4,6 @@
 #include "SFML/Graphics.hpp"
 #include <map>
 
-#include <imgui.h>
-#include <imgui-SFML.h>
-
 class Assets
 {
 private:
@@ -14,7 +11,6 @@ private:
 	std::map<std::string, Animation>	m_animationMap;
 	std::map<std::string, sf::Font>		m_fontMap;
 	std::map<int, sf::Texture>			m_tileSet;
-	std::map<std::string, ImFont*>		m_imguiFonts;
 
 	bool addTexture(const std::string& textureName, const std::string& path,
 	                bool smooth = true);
@@ -34,7 +30,6 @@ public:
 	const sf::Texture& getTexture(const std::string& textureName)     const;
 	const Animation&   getAnimation(const std::string& animationName) const;
 	const sf::Font&    getFont(const std::string& fontName)           const;
-	ImFont* getImGuiFont(const std::string& fontName) const;
 	const std::map<int, sf::Texture> getTileSet() const;
 
 	void loadFromFile(const std::string& filePath);

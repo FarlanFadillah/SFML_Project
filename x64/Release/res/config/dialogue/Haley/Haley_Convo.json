@@ -30,7 +30,7 @@
         {
             "id"            : 2,
             "text"          : "It's always nice running into you. Especially in a quiet place like this.",
-            "npc_response"  : "Oh? So you enjoy our little encounters, then? Maybe we should make them more frequent...%sm3^*",
+            "npc_response"  : "Oh? So you enjoy our little encounters, then? Maybe we should make them \nmore frequent...%sm2^*",
             "has_choices"   : true,
             "choices"       : [
                 {
