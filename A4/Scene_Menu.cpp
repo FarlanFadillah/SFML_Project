@@ -86,7 +86,6 @@ void SceneMenu::sDoAction(const Action& action)
 	
 	if (action.type() == "START")
 	{
-		
 		if (action.name() == "LEFT_CLICK") 
 		{
 			m_mouseOnClick = true;
@@ -146,7 +145,6 @@ void SceneMenu::sDoAction(const Action& action)
 void SceneMenu::sDrawImGui()
 {
 }
-
 // System: Render
 void SceneMenu::sRender()
 {
@@ -240,5 +238,5 @@ void SceneMenu::sRender()
 				window.draw(text);
 			}
 		}
-	window.display();
+	sDrawImGui();
 }

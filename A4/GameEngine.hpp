@@ -27,7 +27,7 @@ protected:
 	void                   update();
 	void                   sUserInput();
 
-	float currentFrame = 0.0f;
+	int currentFrame = 0;
 
 public:
 	sf::Clock deltaClock; 

@@ -17,8 +17,8 @@ void SceneLoading::onEnd()
 
 void SceneLoading::update()
 {
-	sRender();
 	m_currentFrame++;
+	sRender();
 }
 
 void SceneLoading::sRender()
@@ -43,7 +43,7 @@ void SceneLoading::sRender()
 
 
 	window.draw(m_LoadText);
-	window.display();
+	sDrawImGui();
 }
 
 void SceneLoading::sDoAction(const Action& action)

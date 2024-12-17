@@ -152,6 +152,7 @@ void SceneComputer::update()
 	m_entityManager.update();
 	//update current app
 	if(m_appOpen) m_apps[m_currentAppName]->update(); 
+
 	sRender();
 	m_currentFrame++;
 }
@@ -291,10 +292,7 @@ void SceneComputer::sRender()
 			row++;
 		}
 	}
-	
-	
-	
-	window.display();
+	sDrawImGui();
 }
 
 void SceneComputer::sDoAction(const Action& action)

@@ -65,6 +65,10 @@ void GameEngine::update()
 	sUserInput();
 	ImGui::SFML::Update(m_window, deltaClock.restart());
 	currentScene()->update();
+
+	ImGui::SFML::Render(m_window);
+	m_window.display();
+	
 	currentFrame++;
 }
 

@@ -553,7 +553,7 @@ void Scene::spawnObjects(std::string& className, std::string& animationName, con
 	}
 
 }
-
+// adding 0 if the number is one digit
 std::string Scene::formatNumber(int number)
 {
 	std::ostringstream oss;

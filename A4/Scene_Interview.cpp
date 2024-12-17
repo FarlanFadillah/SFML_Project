@@ -28,7 +28,6 @@ void SceneInterview::update()
 	m_entityManager.update();
 	if(typing)
 		typeDialogueLineByLetter(m_ds);
-	sDrawImGui();
 	sRender();
 	m_currentFrame++;
 }
@@ -118,9 +117,7 @@ void SceneInterview::sRender()
 			
 		}
 	}
-	
-	ImGui::SFML::Render(window);
-	window.display();
+	sDrawImGui();
 }
 
 void SceneInterview::sDoAction(const Action& action)

@@ -71,6 +71,8 @@ void CrimeScene::init(std::string path)
 
     guiSetup("res/config/GUI.ini", m_entityManager);
 
+
+
 }
 
 void CrimeScene::sRender()
@@ -253,6 +255,7 @@ void CrimeScene::sRender()
         //m_stats.push_back("Camera Center\t:  " + std::to_string((int)CameraView.getCenter().x) + ", " + std::to_string((int)CameraView.getCenter().y));
         //m_stats.push_back("World Size\t\t  : " + std::to_string((int)m_worldSize.x) + ", " + std::to_string((int)m_worldSize.y) + " [ tiles ]");
         //m_stats.push_back("Player State " + m_player->getComponent<CState>().state);
+
         m_stats.push_back(formatNumber(date.getDate().day) + " / " + formatNumber(date.getDate().month) + " / " + formatNumber(date.getDate().year));
         m_stats.push_back(formatNumber(date.getDate().hour) + " : " + formatNumber(date.getDate().minute) + " : " + formatNumber(date.getDate().second));
         m_stats.push_back(date.getDaysName());
@@ -283,8 +286,7 @@ void CrimeScene::sRender()
             row++;
         }
     }
-
-    window.display();
+    sDrawImGui();
 }
 
 void CrimeScene::loadLevel(const std::string& levelPath)
@@ -325,9 +327,8 @@ void CrimeScene::update()
         // sLifespan();
     }
     sAnimation();
-
-    m_entityManager.update();
     sRender();
+    m_entityManager.update();
     m_currentFrame++;
 }
 
@@ -988,12 +989,11 @@ void OfficeScene::update()
             sCamera();
         }
             // sLifespan();
-        
+        sRender();
         sAnimation();
     }
     
     m_entityManager.update();
-    sRender();
     m_currentFrame++;
 }
 
@@ -1868,10 +1868,7 @@ void OfficeScene::sRender()
     }
     */
 
-    
     sDrawImGui();
-    ImGui::SFML::Render(window);
-    window.display();
 }
 
 Vec2 OfficeScene::windowToWorldPos(Vec2 pos)

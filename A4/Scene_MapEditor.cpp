@@ -292,7 +292,7 @@ void SceneMapEditor::sRender()
             row++;
         }
     }
-    window.display();
+    sDrawImGui();
 }
 
 void SceneMapEditor::sDoAction(const Action& action)
