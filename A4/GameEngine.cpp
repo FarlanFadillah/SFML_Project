@@ -20,6 +20,12 @@ GameEngine::GameEngine(const std::string& filePath)
 {
 	//load font
 	init(filePath);
+	sf::Time elapsed = clock.getElapsedTime();
+
+	lastTime = elapsed.asSeconds();
+	time = elapsed.asSeconds(); 
+
+
 	m_assets.loadFromFile("res/fonts/fonts.ini");
 	ostrich_regular.loadFromFile("res/fonts/ostrich-regular.ttf");
 }
@@ -45,10 +51,6 @@ void GameEngine::init(const std::string& filePath)
 	ImGui::SFML::Init(m_window);
 	ImGui::GetStyle().ScaleAllSizes(2.0f);
 	ImGui::GetIO().FontGlobalScale = 1.5f;
-	m_window.setFramerateLimit(m_windowConfig.FL); 
-
-	
-
 
 	//date
 	m_sDate.loadDate("res/config/date.ini");
@@ -63,12 +65,15 @@ void GameEngine::update()
 {
 	//m_sDate.update(currentFrame);
 	sUserInput();
-	ImGui::SFML::Update(m_window, deltaClock.restart());
 	currentScene()->update();
+}
 
+void GameEngine::render()
+{
+	ImGui::SFML::Update(m_window, deltaClock.restart());
+	currentScene()->sRender();
 	ImGui::SFML::Render(m_window);
 	m_window.display();
-	
 	currentFrame++;
 }
 
@@ -209,7 +214,27 @@ void GameEngine::run()
 {
 	while (isRunning())
 	{
-		update();
+
+		sf::Time elapsed = clock.getElapsedTime();
+		double currentTime = elapsed.asSeconds();
+
+		currentFrame++;
+		delta += (currentTime - lastTime) / (draw / limit);
+		lastTime = currentTime;
+		if (delta >= 1)
+		{
+			update();
+			delta--;
+			ups++;
+		}
+		render(); 
+		if (currentTime - time >= 1)
+		{
+			std::cout << "FPS : " << currentFrame << "; TICK : " << ups << std::endl;
+			time = currentTime;
+			currentFrame = 0;
+			ups = 0;
+		}
 	}
 	ImGui::SFML::Shutdown();
 	m_window.close();

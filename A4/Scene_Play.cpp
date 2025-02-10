@@ -327,7 +327,6 @@ void CrimeScene::update()
         // sLifespan();
     }
     sAnimation();
-    sRender();
     m_entityManager.update();
     m_currentFrame++;
 }
@@ -989,7 +988,6 @@ void OfficeScene::update()
             sCamera();
         }
             // sLifespan();
-        sRender();
         sAnimation();
     }
     

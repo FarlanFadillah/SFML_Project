@@ -16,15 +16,24 @@ struct WindowConfig { int W, H, FL, FS; std::string title; };
 class GameEngine
 {
 protected:
-
+	sf::Clock clock;
 	DateSystem m_sDate;
 	sf::RenderWindow m_window;
+
+	double lastTime = 0;
+	double time = 0;
+	double delta = 0;
+	double limit = 75;
+	double draw = (double)1;
+	double ups = 0;
+
 	
 	std::string      m_currentScene;
 	bool             m_running      = true;
 
 	void                   init(const std::string& filePath);
 	void                   update();
+	void				   render();
 	void                   sUserInput();
 
 	int currentFrame = 0;

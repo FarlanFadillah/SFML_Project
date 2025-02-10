@@ -73,7 +73,6 @@ void SceneMenu::renderButton(std::vector<const char*>& name)
 void SceneMenu::update()
 {
 	m_entityManager.update();
-	sRender();
 }
 
 void SceneMenu::onEnd()

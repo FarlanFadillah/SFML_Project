@@ -28,7 +28,6 @@ void SceneInterview::update()
 	m_entityManager.update();
 	if(typing)
 		typeDialogueLineByLetter(m_ds);
-	sRender();
 	m_currentFrame++;
 }
 

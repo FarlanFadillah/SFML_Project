@@ -153,7 +153,6 @@ void SceneComputer::update()
 	//update current app
 	if(m_appOpen) m_apps[m_currentAppName]->update(); 
 
-	sRender();
 	m_currentFrame++;
 }
 

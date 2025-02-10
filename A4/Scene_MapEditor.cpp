@@ -121,12 +121,11 @@ void SceneMapEditor::update()
     }
 
     m_entityManager.update();
-    sRender();
-    currentScenePlayFrame++;
 }
 
 void SceneMapEditor::sRender()
 {
+    currentScenePlayFrame++;
     m_stats.clear();
     auto& window = m_game->window();
 

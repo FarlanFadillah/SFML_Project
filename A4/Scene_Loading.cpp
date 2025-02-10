@@ -17,12 +17,11 @@ void SceneLoading::onEnd()
 
 void SceneLoading::update()
 {
-	m_currentFrame++;
-	sRender();
 }
 
 void SceneLoading::sRender()
 {
+	m_currentFrame++;
 	auto& window = m_game->window();
 	window.clear(sf::Color(122, 28, 172));
 
